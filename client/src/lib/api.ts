@@ -46,6 +46,15 @@ export function deleteAircraft(id: string): Promise<void> {
   );
 }
 
+/** Upload a cockpit/thumbnail image for an aircraft; the server stores it and returns its path. */
+export function uploadAircraftImage(id: string, file: File): Promise<{ path: string }> {
+  return fetch(backendUrl(`/api/aircraft/${id}/image`), {
+    method: "POST",
+    headers: { "Content-Type": file.type || "application/octet-stream" },
+    body: file,
+  }).then((r) => handle<{ path: string }>(r));
+}
+
 /** Upload the imported source PDF for an aircraft; the server stores it and records its path. */
 export function uploadAircraftPdf(id: string, file: File): Promise<{ pdf: string }> {
   return fetch(backendUrl(`/api/aircraft/${id}/pdf`), {

@@ -2,6 +2,7 @@ import express from "express";
 import cors from "cors";
 import { readFile, writeFile, readdir, unlink, access, mkdir, cp } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
+import { randomUUID } from "node:crypto";
 import path from "node:path";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -279,6 +280,41 @@ app.post(
       res.json({ pdf: aircraft.pdf });
     } catch (err) {
       res.status(500).json({ error: "Failed to store PDF", detail: String(err) });
+    }
+  }
+);
+
+// Map image content-types to file extensions for uploads.
+const IMAGE_EXT = {
+  "image/png": "png",
+  "image/jpeg": "jpg",
+  "image/jpg": "jpg",
+  "image/webp": "webp",
+  "image/gif": "gif",
+  "image/svg+xml": "svg",
+};
+
+// POST /api/aircraft/:id/image — store an uploaded cockpit/thumbnail image (raw image/* body)
+// in the aircraft's image folder under a unique name, and return its path.
+app.post(
+  "/api/aircraft/:id/image",
+  express.raw({ type: "image/*", limit: "10mb" }),
+  async (req, res) => {
+    const { id } = req.params;
+    if (!isValidId(id)) return res.status(400).json({ error: "Invalid aircraft id" });
+    if (!(await exists(fileFor(id)))) return res.status(404).json({ error: "Not found" });
+    const ct = String(req.headers["content-type"] || "").split(";")[0].trim().toLowerCase();
+    const ext = IMAGE_EXT[ct];
+    if (!ext) return res.status(400).json({ error: "Unsupported image type" });
+    if (!req.body || !req.body.length) return res.status(400).json({ error: "Empty image body" });
+    try {
+      const dir = path.join(IMAGES_DIR, id);
+      await mkdir(dir, { recursive: true });
+      const name = `upload-${randomUUID().slice(0, 8)}.${ext}`;
+      await writeFile(path.join(dir, name), req.body);
+      res.json({ path: `/images/${id}/${name}` });
+    } catch (err) {
+      res.status(500).json({ error: "Failed to store image", detail: String(err) });
     }
   }
 );

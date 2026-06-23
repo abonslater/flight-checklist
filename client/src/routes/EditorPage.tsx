@@ -6,6 +6,7 @@ import {
   getAircraft,
   listAircraft,
   updateAircraft,
+  uploadAircraftImage,
   uploadAircraftPdf,
 } from "../lib/api";
 import type {
@@ -108,6 +109,39 @@ const fileNameOf = (path: string) => path.split("/").pop() ?? "";
 const inputCls =
   "w-full rounded-lg border border-cockpit-edge bg-cockpit-panel px-3 py-2 text-base text-slate-100 outline-none focus:border-cockpit-accent";
 
+// "Upload" button wrapping a hidden image file input. The picked file is queued and only
+// uploaded when the checklist is saved (once the aircraft id exists).
+function ImageUploadButton({
+  onPick,
+  pendingName,
+}: {
+  onPick: (file: File) => void;
+  pendingName?: string;
+}) {
+  return (
+    <div className="flex items-center gap-2">
+      <label className="touch-target inline-flex shrink-0 cursor-pointer items-center rounded-lg border border-cockpit-edge px-3 text-sm text-cockpit-accent">
+        Upload image
+        <input
+          type="file"
+          accept="image/*"
+          className="hidden"
+          onChange={(e) => {
+            const f = e.target.files?.[0];
+            e.target.value = ""; // allow re-selecting the same file
+            if (f) onPick(f);
+          }}
+        />
+      </label>
+      {pendingName && (
+        <span className="truncate text-xs text-slate-400" title={pendingName}>
+          {pendingName} — uploads on save
+        </span>
+      )}
+    </div>
+  );
+}
+
 export default function EditorPage() {
   const { id } = useParams();
   const isEdit = Boolean(id);
@@ -126,6 +160,13 @@ export default function EditorPage() {
   const [importing, setImporting] = useState(false);
   // The imported PDF file, held until save so a copy can be stored on the server.
   const [pendingPdf, setPendingPdf] = useState<File | null>(null);
+  // Picked image files, held until save (when the aircraft id is known) then uploaded.
+  // Section images are keyed by section local id; the thumbnail is separate.
+  const [pendingImages, setPendingImages] = useState<Record<string, File>>({});
+  const [pendingThumb, setPendingThumb] = useState<File | null>(null);
+
+  const queueSectionImage = (sectionId: string, file: File) =>
+    setPendingImages((p) => ({ ...p, [sectionId]: file }));
 
   useEffect(() => {
     if (!isEdit || !id) return;
@@ -339,6 +380,28 @@ export default function EditorPage() {
         const { id: _omit, ...payload } = draft;
         saved = await createAircraft(payload);
       }
+      // Upload any picked images now that the aircraft id (and its image folder) exist,
+      // then persist the resulting paths. Sections keep their order through save, so a
+      // section's local id maps to the same index in the saved aircraft. Non-fatal.
+      const imageEntries = Object.entries(pendingImages);
+      if (imageEntries.length || pendingThumb) {
+        try {
+          const sections = saved.sections.slice();
+          for (const [sectionId, file] of imageEntries) {
+            const idx = draft.sections.findIndex((s) => s.id === sectionId);
+            if (idx < 0 || !sections[idx]) continue;
+            const { path } = await uploadAircraftImage(saved.id, file);
+            sections[idx] = { ...sections[idx], image: path };
+          }
+          let thumbnail = saved.thumbnail;
+          if (pendingThumb) {
+            thumbnail = (await uploadAircraftImage(saved.id, pendingThumb)).path;
+          }
+          saved = await updateAircraft(saved.id, { ...saved, sections, thumbnail });
+        } catch (uploadErr) {
+          console.warn("Could not upload image(s):", uploadErr);
+        }
+      }
       // Store a copy of the imported PDF now that the aircraft id is known. Non-fatal:
       // a failed upload shouldn't block the (already-saved) checklist.
       if (pendingPdf) {
@@ -465,15 +528,18 @@ export default function EditorPage() {
             placeholder="172 Skyhawk"
           />
         </label>
-        <label className="flex flex-col gap-1 text-sm text-slate-400 sm:col-span-2">
-          Thumbnail image path
-          <input
-            className={inputCls}
-            value={draft.thumbnail}
-            onChange={(e) => patch({ thumbnail: e.target.value })}
-            placeholder="/images/cessna-172/thumb.png"
-          />
-        </label>
+        <div className="flex flex-col gap-2 text-sm text-slate-400 sm:col-span-2">
+          <label className="flex flex-col gap-1">
+            Thumbnail image path
+            <input
+              className={inputCls}
+              value={draft.thumbnail}
+              onChange={(e) => patch({ thumbnail: e.target.value })}
+              placeholder="/images/cessna-172/thumb.png"
+            />
+          </label>
+          <ImageUploadButton onPick={setPendingThumb} pendingName={pendingThumb?.name} />
+        </div>
       </div>
 
       {/* Template flag */}
@@ -532,15 +598,21 @@ export default function EditorPage() {
               </button>
             </div>
 
-            <label className="flex flex-col gap-1 text-sm text-slate-400">
-              Cockpit image path
-              <input
-                className={inputCls}
-                value={section.image}
-                onChange={(e) => patchSection(si, { image: e.target.value })}
-                placeholder="/images/cessna-172/preflight.png"
+            <div className="flex flex-col gap-2 text-sm text-slate-400">
+              <label className="flex flex-col gap-1">
+                Cockpit image path
+                <input
+                  className={inputCls}
+                  value={section.image}
+                  onChange={(e) => patchSection(si, { image: e.target.value })}
+                  placeholder="/images/cessna-172/preflight.png"
+                />
+              </label>
+              <ImageUploadButton
+                onPick={(f) => queueSectionImage(section.id, f)}
+                pendingName={pendingImages[section.id]?.name}
               />
-            </label>
+            </div>
 
             <div className="flex flex-col gap-2">
               {section.items.map((item, ii) => (
