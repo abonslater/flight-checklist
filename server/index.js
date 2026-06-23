@@ -5,13 +5,27 @@ import { fileURLToPath } from "node:url";
 import path from "node:path";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const DATA_DIR = path.join(__dirname, "data");
 const CLIENT_DIST = path.join(__dirname, "..", "client", "dist");
-// Cockpit images live in the client's public folder, one subfolder per aircraft id.
-const IMAGES_DIR = path.join(__dirname, "..", "client", "public", "images");
+
+// Bundled seed content shipped in the repo. When a persistent volume is used, these are
+// copied into it on first boot so the app isn't empty.
+const SEED_DATA_DIR = path.join(__dirname, "data");
+const SEED_IMAGES_DIR = path.join(__dirname, "..", "client", "public", "images");
+const SEED_PDFS_DIR = path.join(__dirname, "..", "client", "public", "pdfs");
+
+// Storage locations. Set STORAGE_DIR (e.g. a Railway volume mounted at /data) to persist
+// created checklists, images, and PDFs across redeploys; it places everything under
+// <STORAGE_DIR>/{data,images,pdfs}. Individual dirs can also be overridden directly.
+// With nothing set, storage defaults to the bundled repo folders (local dev / single host).
+const STORAGE_DIR = process.env.STORAGE_DIR || "";
+const DATA_DIR =
+  process.env.DATA_DIR || (STORAGE_DIR ? path.join(STORAGE_DIR, "data") : SEED_DATA_DIR);
+const IMAGES_DIR =
+  process.env.IMAGES_DIR || (STORAGE_DIR ? path.join(STORAGE_DIR, "images") : SEED_IMAGES_DIR);
+const PDFS_DIR =
+  process.env.PDFS_DIR || (STORAGE_DIR ? path.join(STORAGE_DIR, "pdfs") : SEED_PDFS_DIR);
+// New aircraft image folders are seeded from this "default" set inside IMAGES_DIR.
 const DEFAULT_IMAGES_DIR = path.join(IMAGES_DIR, "default");
-// Imported source PDFs are stored here, one file per aircraft: <id>.pdf.
-const PDFS_DIR = path.join(__dirname, "..", "client", "public", "pdfs");
 const PORT = process.env.PORT || 3001;
 
 const app = express();
@@ -45,6 +59,33 @@ async function exists(p) {
   } catch {
     return false;
   }
+}
+
+async function isEmptyDir(dir) {
+  try {
+    return (await readdir(dir)).length === 0;
+  } catch {
+    return true; // missing dir counts as empty
+  }
+}
+
+// Copy bundled seed content into a (different) storage dir the first time it's empty, so a
+// freshly-mounted volume isn't blank. Never overwrites existing data on later boots.
+async function seedDir(seedSrc, dest) {
+  if (path.resolve(seedSrc) === path.resolve(dest)) return; // no storage override → no-op
+  if (!(await exists(seedSrc))) return;
+  await mkdir(dest, { recursive: true });
+  if (!(await isEmptyDir(dest))) return; // already has data — leave it alone
+  await cp(seedSrc, dest, { recursive: true });
+  console.log(`Seeded ${dest} from bundled ${path.basename(seedSrc)}`);
+}
+
+async function initStorage() {
+  // Ensure target dirs exist, then seed them from the repo on first run.
+  await mkdir(DATA_DIR, { recursive: true });
+  await seedDir(SEED_DATA_DIR, DATA_DIR);
+  await seedDir(SEED_IMAGES_DIR, IMAGES_DIR);
+  await seedDir(SEED_PDFS_DIR, PDFS_DIR);
 }
 
 async function readAircraft(id) {
@@ -256,6 +297,13 @@ app.get(/^(?!\/api).*/, async (_req, res) => {
   res.status(404).send("Client not built. Run `npm run build`.");
 });
 
-app.listen(PORT, () => {
-  console.log(`Flight checklist API listening on http://localhost:${PORT}`);
-});
+initStorage()
+  .catch((err) => console.warn("Storage init/seed warning:", err))
+  .finally(() => {
+    app.listen(PORT, () => {
+      console.log(`Flight checklist API listening on http://localhost:${PORT}`);
+      console.log(`  data:   ${DATA_DIR}`);
+      console.log(`  images: ${IMAGES_DIR}`);
+      console.log(`  pdfs:   ${PDFS_DIR}`);
+    });
+  });

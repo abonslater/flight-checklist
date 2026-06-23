@@ -56,6 +56,25 @@ checklist JSON, images, and PDFs to disk) cannot run there. Deploy the two parts
 > The `127` build error happens when Vercel isn't told to install the client's dependencies;
 > `vercel.json` fixes that by running `npm install --prefix client` and building `client/`.
 
+### Backend on Railway (with persistent storage)
+
+`railway.json` configures the build (`npm install --prefix server`) and start
+(`npm --prefix server start`) commands. Keep the service's **Root Directory at the repo
+root** so the server can reach `client/public/`.
+
+By default the server stores data inside the repo folders, which on Railway are **wiped on
+every redeploy**. To keep created checklists/images/PDFs, attach a volume and point storage
+at it:
+
+1. In the Railway service: **Settings → Volumes → New Volume**, mount path `/data`.
+2. **Settings → Variables**, add `STORAGE_DIR = /data`.
+3. Redeploy.
+
+The server then reads/writes `/data/{data,images,pdfs}` and, on the **first** boot with an
+empty volume, seeds it from the repo's bundled checklists and images. Later boots never
+overwrite the volume, so your created content survives redeploys. (Storage paths can also be
+overridden individually via `DATA_DIR` / `IMAGES_DIR` / `PDFS_DIR`.)
+
 ## Data
 
 Each aircraft is a JSON file in `server/data/<id>.json`:
