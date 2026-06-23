@@ -1,0 +1,859 @@
+{
+  "id": "cessna-404-titan",
+  "make": "Cessna",
+  "model": "404 Titan",
+  "thumbnail": "/images/cessna-404-titan/thumb.png",
+  "isTemplate": false,
+  "pdf": "/pdfs/cessna-404-titan.pdf",
+  "specs": {
+    "weight": [
+      {
+        "label": "Maximum Takeoff Weight",
+        "value": "8,400 lbs (3,810 kg)"
+      },
+      {
+        "label": "Maximum Landing Weight",
+        "value": "8,100 lbs (3,674 kg)"
+      },
+      {
+        "label": "Typical Empty Weight",
+        "value": "4,834-4,965 lbs"
+      },
+      {
+        "label": "Fuel Capacity",
+        "value": "348 gal / 344 usable"
+      },
+      {
+        "label": "Payload w/ Full Fuel",
+        "value": "approx. 701 lbs"
+      }
+    ],
+    "dimensions": [
+      {
+        "label": "Wingspan",
+        "value": "46 ft 4 in (14.12 m)"
+      },
+      {
+        "label": "Length",
+        "value": "39 ft 6 in (12.04 m)"
+      },
+      {
+        "label": "Height",
+        "value": "13 ft 3 in (4.04 m)"
+      },
+      {
+        "label": "Cabin Volume",
+        "value": "152 cu ft"
+      },
+      {
+        "label": "Crew / Passengers",
+        "value": "1 / up to 7"
+      }
+    ],
+    "performance": [
+      {
+        "label": "Takeoff Ground Roll",
+        "value": "1,788 ft"
+      },
+      {
+        "label": "Takeoff Over 50 ft",
+        "value": "2,367 ft"
+      },
+      {
+        "label": "Rate of Climb",
+        "value": "1,575 ft/min"
+      },
+      {
+        "label": "Service Ceiling",
+        "value": "26,000 ft"
+      },
+      {
+        "label": "Max Cruise Speed",
+        "value": "232 KTS"
+      },
+      {
+        "label": "Normal Cruise",
+        "value": "217 KTS"
+      },
+      {
+        "label": "Landing Over 50 ft",
+        "value": "2,130 ft"
+      }
+    ],
+    "speeds": []
+  },
+  "sections": [
+    {
+      "id": "section-new-440",
+      "title": "Preflight",
+      "image": "/images/cessna-404-titan/pre-start.png",
+      "items": [
+        {
+          "id": "item-new-441",
+          "label": "Preflight inspection",
+          "detail": "COMPLETED"
+        },
+        {
+          "id": "item-new-442",
+          "label": "Pitot / static covers",
+          "detail": "REMOVED"
+        },
+        {
+          "id": "item-new-443",
+          "label": "Chocks / tie-downs",
+          "detail": "REMOVED"
+        },
+        {
+          "id": "item-new-444",
+          "label": "Air intakes",
+          "detail": "CLEAR"
+        },
+        {
+          "id": "item-new-445",
+          "label": "Doors / baggage",
+          "detail": "SECURED"
+        },
+        {
+          "id": "item-new-446",
+          "label": "Parking brake",
+          "detail": "SET"
+        },
+        {
+          "id": "item-new-447",
+          "label": "Fuel quantity",
+          "detail": "CHECK"
+        },
+        {
+          "id": "item-new-448",
+          "label": "Fuel selectors l/r",
+          "detail": "MAIN TANKS"
+        },
+        {
+          "id": "item-new-449",
+          "label": "Circuit breakers",
+          "detail": "IN"
+        }
+      ]
+    },
+    {
+      "id": "section-new-450",
+      "title": "Before engine start",
+      "image": "/images/cessna-404-titan/pre-start.png",
+      "items": [
+        {
+          "id": "item-new-451",
+          "label": "Battery / avionics",
+          "detail": "ON / AS REQ"
+        },
+        {
+          "id": "item-new-452",
+          "label": "Beacon light",
+          "detail": "ON"
+        },
+        {
+          "id": "item-new-453",
+          "label": "Mixtures",
+          "detail": "FULL RICH"
+        },
+        {
+          "id": "item-new-454",
+          "label": "Propellers",
+          "detail": "FULL FORWARD"
+        },
+        {
+          "id": "item-new-455",
+          "label": "Throttles",
+          "detail": "OPEN 1/4 IN"
+        },
+        {
+          "id": "item-new-456",
+          "label": "Fuel pumps",
+          "detail": "ON"
+        },
+        {
+          "id": "item-new-457",
+          "label": "Magnetos",
+          "detail": "ON"
+        }
+      ]
+    },
+    {
+      "id": "section-new-458",
+      "title": "Engine start",
+      "image": "/images/cessna-404-titan/startup.png",
+      "items": [
+        {
+          "id": "item-new-459",
+          "label": "Area",
+          "detail": "CLEAR"
+        },
+        {
+          "id": "item-new-460",
+          "label": "Starter",
+          "detail": "ENGAGE"
+        },
+        {
+          "id": "item-new-461",
+          "label": "Throttle",
+          "detail": "ADJUST IDLE"
+        },
+        {
+          "id": "item-new-462",
+          "label": "Oil pressure",
+          "detail": "CHECK"
+        },
+        {
+          "id": "item-new-463",
+          "label": "Starter",
+          "detail": "DISENGAGE"
+        },
+        {
+          "id": "item-new-464",
+          "label": "Alternator",
+          "detail": "ON"
+        },
+        {
+          "id": "item-new-465",
+          "label": "Repeat",
+          "detail": "OPPOSITE ENGINE"
+        },
+        {
+          "id": "item-new-466",
+          "label": "Fuel pumps",
+          "detail": "OFF / AS REQ"
+        },
+        {
+          "id": "item-new-467",
+          "label": "Avionics",
+          "detail": "ON"
+        },
+        {
+          "id": "item-new-468",
+          "label": "Engine instruments",
+          "detail": "CHECK"
+        },
+        {
+          "id": "item-new-469",
+          "label": "Vacuum / amps",
+          "detail": "CHECK"
+        },
+        {
+          "id": "item-new-470",
+          "label": "Annunciators",
+          "detail": "CHECK"
+        }
+      ]
+    },
+    {
+      "id": "section-new-471",
+      "title": "Before taxi",
+      "image": "/images/cessna-404-titan/before-taxi.png",
+      "items": [
+        {
+          "id": "item-new-472",
+          "label": "Com / nav / gps",
+          "detail": "SET"
+        },
+        {
+          "id": "item-new-473",
+          "label": "Atis",
+          "detail": "OBTAIN"
+        },
+        {
+          "id": "item-new-474",
+          "label": "Clearance",
+          "detail": "OBTAIN"
+        },
+        {
+          "id": "item-new-475",
+          "label": "Altimeter",
+          "detail": "SET"
+        },
+        {
+          "id": "item-new-476",
+          "label": "Transponder",
+          "detail": "SET"
+        },
+        {
+          "id": "item-new-477",
+          "label": "Autopilot",
+          "detail": "CHECK / OFF"
+        },
+        {
+          "id": "item-new-478",
+          "label": "Flight controls",
+          "detail": "FREE & CORRECT"
+        },
+        {
+          "id": "item-new-479",
+          "label": "Trim",
+          "detail": "SET"
+        },
+        {
+          "id": "item-new-480",
+          "label": "Flaps",
+          "detail": "UP"
+        },
+        {
+          "id": "item-new-481",
+          "label": "Parking brake",
+          "detail": "RELEASE"
+        },
+        {
+          "id": "item-new-482",
+          "label": "Brakes",
+          "detail": "CHECK"
+        }
+      ]
+    },
+    {
+      "id": "section-new-483",
+      "title": "Run-up",
+      "image": "/images/cessna-404-titan/thumb.png",
+      "items": [
+        {
+          "id": "item-new-484",
+          "label": "Parking brake",
+          "detail": "SET"
+        },
+        {
+          "id": "item-new-485",
+          "label": "Throttles",
+          "detail": "1700 RPM"
+        },
+        {
+          "id": "item-new-486",
+          "label": "Magnetos",
+          "detail": "CHECK"
+        },
+        {
+          "id": "item-new-487",
+          "label": "Propellers",
+          "detail": "CYCLE"
+        },
+        {
+          "id": "item-new-488",
+          "label": "Engine gauges",
+          "detail": "CHECK"
+        },
+        {
+          "id": "item-new-489",
+          "label": "Fuel pumps",
+          "detail": "ON"
+        },
+        {
+          "id": "item-new-490",
+          "label": "Mixtures",
+          "detail": "RICH / SET"
+        },
+        {
+          "id": "item-new-491",
+          "label": "Throttles",
+          "detail": "IDLE CHECK"
+        }
+      ]
+    },
+    {
+      "id": "section-new-492",
+      "title": "Before takeoff",
+      "image": "/images/cessna-404-titan/before-take-off.png",
+      "items": [
+        {
+          "id": "item-new-493",
+          "label": "Departure briefing",
+          "detail": "COMPLETE"
+        },
+        {
+          "id": "item-new-494",
+          "label": "Doors / windows",
+          "detail": "LOCKED"
+        },
+        {
+          "id": "item-new-495",
+          "label": "Fuel selectors",
+          "detail": "MAIN TANKS"
+        },
+        {
+          "id": "item-new-496",
+          "label": "Fuel pumps",
+          "detail": "ON"
+        },
+        {
+          "id": "item-new-497",
+          "label": "Mixtures",
+          "detail": "FULL RICH"
+        },
+        {
+          "id": "item-new-498",
+          "label": "Propellers",
+          "detail": "FULL FORWARD"
+        },
+        {
+          "id": "item-new-499",
+          "label": "Trims",
+          "detail": "SET"
+        },
+        {
+          "id": "item-new-500",
+          "label": "Flaps",
+          "detail": "T/O & APPR AS REQ"
+        },
+        {
+          "id": "item-new-501",
+          "label": "Landing / strobe",
+          "detail": "ON"
+        },
+        {
+          "id": "item-new-502",
+          "label": "Transponder",
+          "detail": "ALT"
+        }
+      ]
+    },
+    {
+      "id": "section-new-503",
+      "title": "Normal takeoff",
+      "image": "/images/cessna-404-titan/take-off.png",
+      "items": [
+        {
+          "id": "item-new-504",
+          "label": "Brakes",
+          "detail": "HOLD"
+        },
+        {
+          "id": "item-new-505",
+          "label": "Throttles",
+          "detail": "ADVANCE SMOOTHLY"
+        },
+        {
+          "id": "item-new-506",
+          "label": "Manifold pressure",
+          "detail": "40 IN HG MAX"
+        },
+        {
+          "id": "item-new-507",
+          "label": "Engine instruments",
+          "detail": "CHECK"
+        },
+        {
+          "id": "item-new-508",
+          "label": "Brakes",
+          "detail": "RELEASE"
+        },
+        {
+          "id": "item-new-509",
+          "label": "Directional control",
+          "detail": "MAINTAIN"
+        },
+        {
+          "id": "item-new-510",
+          "label": "Rotate",
+          "detail": "91-102 KIAS"
+        },
+        {
+          "id": "item-new-511",
+          "label": "Pitch",
+          "detail": "POSITIVE CLIMB"
+        },
+        {
+          "id": "item-new-512",
+          "label": "Landing gear",
+          "detail": "UP"
+        },
+        {
+          "id": "item-new-513",
+          "label": "Flaps",
+          "detail": "UP when clear"
+        }
+      ]
+    },
+    {
+      "id": "section-new-514",
+      "title": "Climb",
+      "image": "/images/cessna-404-titan/climb-out.png",
+      "items": [
+        {
+          "id": "item-new-515",
+          "label": "Airspeed",
+          "detail": "115-140 KIAS"
+        },
+        {
+          "id": "item-new-516",
+          "label": "Best rate",
+          "detail": "109 KIAS"
+        },
+        {
+          "id": "item-new-517",
+          "label": "Power",
+          "detail": "33.5 IN / 1900 RPM"
+        },
+        {
+          "id": "item-new-518",
+          "label": "Mixtures",
+          "detail": "CLIMB RANGE"
+        },
+        {
+          "id": "item-new-519",
+          "label": "Fuel pumps",
+          "detail": "ON initially"
+        },
+        {
+          "id": "item-new-520",
+          "label": "Engine parameters",
+          "detail": "MONITOR"
+        },
+        {
+          "id": "item-new-521",
+          "label": "Cowl flaps",
+          "detail": "AS REQUIRED"
+        },
+        {
+          "id": "item-new-522",
+          "label": "Altimeter",
+          "detail": "STD above transition"
+        }
+      ]
+    },
+    {
+      "id": "section-new-523",
+      "title": "Cruise",
+      "image": "/images/cessna-404-titan/cruise.png",
+      "items": [
+        {
+          "id": "item-new-524",
+          "label": "Power",
+          "detail": "SET"
+        },
+        {
+          "id": "item-new-525",
+          "label": "Mixtures",
+          "detail": "LEAN AS REQ"
+        },
+        {
+          "id": "item-new-526",
+          "label": "Fuel pumps",
+          "detail": "OFF / AS REQ"
+        },
+        {
+          "id": "item-new-527",
+          "label": "Fuel balance",
+          "detail": "MONITOR"
+        },
+        {
+          "id": "item-new-528",
+          "label": "Cowl flaps",
+          "detail": "AS REQUIRED"
+        },
+        {
+          "id": "item-new-529",
+          "label": "Engine / fuel",
+          "detail": "MONITOR"
+        }
+      ]
+    },
+    {
+      "id": "section-new-530",
+      "title": "Descent",
+      "image": "/images/cessna-404-titan/descent.png",
+      "items": [
+        {
+          "id": "item-new-531",
+          "label": "Atis / weather",
+          "detail": "OBTAIN"
+        },
+        {
+          "id": "item-new-532",
+          "label": "Altimeter",
+          "detail": "SET LOCAL"
+        },
+        {
+          "id": "item-new-533",
+          "label": "Power reduction",
+          "detail": "GRADUAL"
+        },
+        {
+          "id": "item-new-534",
+          "label": "Mixtures",
+          "detail": "ENRICHEN"
+        },
+        {
+          "id": "item-new-535",
+          "label": "Cowl flaps",
+          "detail": "AS REQUIRED"
+        },
+        {
+          "id": "item-new-536",
+          "label": "Landing lights",
+          "detail": "ON below 10,000"
+        }
+      ]
+    },
+    {
+      "id": "section-new-537",
+      "title": "Approach",
+      "image": "/images/cessna-404-titan/approach.png",
+      "items": [
+        {
+          "id": "item-new-538",
+          "label": "Approach briefing",
+          "detail": "COMPLETE"
+        },
+        {
+          "id": "item-new-539",
+          "label": "Nav / gps / cdi",
+          "detail": "SET"
+        },
+        {
+          "id": "item-new-540",
+          "label": "Fuel selectors",
+          "detail": "MAIN TANKS"
+        },
+        {
+          "id": "item-new-541",
+          "label": "Fuel pumps",
+          "detail": "ON"
+        },
+        {
+          "id": "item-new-542",
+          "label": "Mixtures",
+          "detail": "FULL RICH"
+        },
+        {
+          "id": "item-new-543",
+          "label": "Propellers",
+          "detail": "FULL FORWARD"
+        },
+        {
+          "id": "item-new-544",
+          "label": "Airspeed",
+          "detail": "BELOW 182 KIAS"
+        },
+        {
+          "id": "item-new-545",
+          "label": "Flaps",
+          "detail": "T/O & APPR"
+        }
+      ]
+    },
+    {
+      "id": "section-new-546",
+      "title": "Before landing",
+      "image": "/images/cessna-404-titan/landing.png",
+      "items": [
+        {
+          "id": "item-new-547",
+          "label": "Landing gear",
+          "detail": "DOWN"
+        },
+        {
+          "id": "item-new-548",
+          "label": "Gear lights",
+          "detail": "3 GREEN"
+        },
+        {
+          "id": "item-new-549",
+          "label": "Flaps",
+          "detail": "LANDING AS REQ"
+        },
+        {
+          "id": "item-new-550",
+          "label": "Airspeed",
+          "detail": "91 KIAS + WIND"
+        },
+        {
+          "id": "item-new-551",
+          "label": "Propellers",
+          "detail": "FULL FORWARD"
+        },
+        {
+          "id": "item-new-552",
+          "label": "Mixtures",
+          "detail": "FULL RICH"
+        },
+        {
+          "id": "item-new-553",
+          "label": "Landing lights",
+          "detail": "VERIFY ON"
+        },
+        {
+          "id": "item-new-554",
+          "label": "Autopilot",
+          "detail": "OFF"
+        }
+      ]
+    },
+    {
+      "id": "section-new-555",
+      "title": "Landing",
+      "image": "/images/cessna-404-titan/landing.png",
+      "items": [
+        {
+          "id": "item-new-556",
+          "label": "Airspeed",
+          "detail": "VAPP / VREF"
+        },
+        {
+          "id": "item-new-557",
+          "label": "Gear",
+          "detail": "DOWN - 3 GREEN"
+        },
+        {
+          "id": "item-new-558",
+          "label": "Flare",
+          "detail": "AS REQUIRED"
+        },
+        {
+          "id": "item-new-559",
+          "label": "Throttles",
+          "detail": "IDLE"
+        },
+        {
+          "id": "item-new-560",
+          "label": "Brakes",
+          "detail": "AS REQUIRED"
+        }
+      ]
+    },
+    {
+      "id": "section-new-561",
+      "title": "Go around",
+      "image": "/images/cessna-404-titan/thumb.png",
+      "items": [
+        {
+          "id": "item-new-562",
+          "label": "Throttles",
+          "detail": "FULL FORWARD"
+        },
+        {
+          "id": "item-new-563",
+          "label": "Propellers",
+          "detail": "FULL FORWARD"
+        },
+        {
+          "id": "item-new-564",
+          "label": "Mixtures",
+          "detail": "FULL RICH"
+        },
+        {
+          "id": "item-new-565",
+          "label": "Flaps",
+          "detail": "T/O & APPR"
+        },
+        {
+          "id": "item-new-566",
+          "label": "Pitch",
+          "detail": "CLIMB ATTITUDE"
+        },
+        {
+          "id": "item-new-567",
+          "label": "Landing gear",
+          "detail": "UP positive rate"
+        },
+        {
+          "id": "item-new-568",
+          "label": "Airspeed",
+          "detail": "VX/VY AS REQ"
+        },
+        {
+          "id": "item-new-569",
+          "label": "Flaps",
+          "detail": "UP when clear"
+        }
+      ]
+    },
+    {
+      "id": "section-new-570",
+      "title": "After landing",
+      "image": "/images/cessna-404-titan/taxi-to-ramp.png",
+      "items": [
+        {
+          "id": "item-new-571",
+          "label": "Flaps",
+          "detail": "UP"
+        },
+        {
+          "id": "item-new-572",
+          "label": "Cowl flaps",
+          "detail": "OPEN"
+        },
+        {
+          "id": "item-new-573",
+          "label": "Fuel pumps",
+          "detail": "OFF"
+        },
+        {
+          "id": "item-new-574",
+          "label": "Landing lights",
+          "detail": "OFF"
+        },
+        {
+          "id": "item-new-575",
+          "label": "Strobe lights",
+          "detail": "OFF"
+        },
+        {
+          "id": "item-new-576",
+          "label": "Transponder",
+          "detail": "STBY"
+        },
+        {
+          "id": "item-new-577",
+          "label": "Trim",
+          "detail": "RESET"
+        }
+      ]
+    },
+    {
+      "id": "section-new-578",
+      "title": "Shutdown",
+      "image": "/images/cessna-404-titan/shutdown.png",
+      "items": [
+        {
+          "id": "item-new-579",
+          "label": "Parking brake",
+          "detail": "SET"
+        },
+        {
+          "id": "item-new-580",
+          "label": "Avionics",
+          "detail": "OFF"
+        },
+        {
+          "id": "item-new-581",
+          "label": "Throttles",
+          "detail": "IDLE"
+        },
+        {
+          "id": "item-new-582",
+          "label": "Mixtures",
+          "detail": "IDLE CUT-OFF"
+        },
+        {
+          "id": "item-new-583",
+          "label": "Magnetos",
+          "detail": "OFF"
+        },
+        {
+          "id": "item-new-584",
+          "label": "Fuel selectors",
+          "detail": "OFF"
+        },
+        {
+          "id": "item-new-585",
+          "label": "Alternators",
+          "detail": "OFF"
+        },
+        {
+          "id": "item-new-586",
+          "label": "Battery",
+          "detail": "OFF"
+        },
+        {
+          "id": "item-new-587",
+          "label": "Control lock / chocks",
+          "detail": "AS REQUIRED"
+        }
+      ]
+    }
+  ]
+}

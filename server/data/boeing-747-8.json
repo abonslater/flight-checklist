@@ -1,0 +1,90 @@
+{
+  "id": "boeing-747-8",
+  "make": "Boeing",
+  "model": "747-8 Intercontinental",
+  "thumbnail": "/images/boeing-747-8/thumb.svg",
+  "sections": [
+    {
+      "id": "preflight",
+      "title": "Preflight / Power Up",
+      "image": "/images/boeing-747-8/preflight.svg",
+      "items": [
+        { "id": "p1", "label": "Battery", "detail": "ON" },
+        { "id": "p2", "label": "APU", "detail": "START" },
+        { "id": "p3", "label": "External power", "detail": "AS REQUIRED" },
+        { "id": "p4", "label": "IRS mode selectors", "detail": "NAV" },
+        { "id": "p5", "label": "FMC route", "detail": "LOAD & VERIFY" }
+      ]
+    },
+    {
+      "id": "before-start",
+      "title": "Before Start",
+      "image": "/images/boeing-747-8/before-start.svg",
+      "items": [
+        { "id": "b1", "label": "Fuel pumps", "detail": "ON" },
+        { "id": "b2", "label": "Beacon", "detail": "ON" },
+        { "id": "b3", "label": "Doors", "detail": "CLOSED & ARMED" },
+        { "id": "b4", "label": "Parking brake", "detail": "SET" },
+        { "id": "b5", "label": "Pack flow", "detail": "AS REQUIRED" }
+      ]
+    },
+    {
+      "id": "engine-start",
+      "title": "Engine Start",
+      "image": "/images/boeing-747-8/engine-start.svg",
+      "items": [
+        { "id": "e1", "label": "Bleed air", "detail": "APU / ON" },
+        { "id": "e2", "label": "Engine start selectors", "detail": "START 1-2-3-4" },
+        { "id": "e3", "label": "Fuel control switches", "detail": "RUN" },
+        { "id": "e4", "label": "EGT / N1 / N2", "detail": "MONITOR" }
+      ]
+    },
+    {
+      "id": "before-takeoff",
+      "title": "Before Takeoff",
+      "image": "/images/boeing-747-8/before-takeoff.svg",
+      "items": [
+        { "id": "t1", "label": "Flaps", "detail": "SET FOR T/O" },
+        { "id": "t2", "label": "Stabilizer trim", "detail": "SET" },
+        { "id": "t3", "label": "Flight controls", "detail": "CHECKED" },
+        { "id": "t4", "label": "Takeoff config", "detail": "NO WARNING" },
+        { "id": "t5", "label": "Transponder", "detail": "TA/RA" }
+      ]
+    },
+    {
+      "id": "climb-cruise",
+      "title": "Climb & Cruise",
+      "image": "/images/boeing-747-8/climb-cruise.svg",
+      "items": [
+        { "id": "c1", "label": "Landing gear", "detail": "UP" },
+        { "id": "c2", "label": "Flaps", "detail": "UP ON SCHEDULE" },
+        { "id": "c3", "label": "Altimeters", "detail": "STD ABOVE TA" },
+        { "id": "c4", "label": "Autopilot / LNAV / VNAV", "detail": "ENGAGE" }
+      ]
+    },
+    {
+      "id": "descent-landing",
+      "title": "Descent & Landing",
+      "image": "/images/boeing-747-8/descent-landing.svg",
+      "items": [
+        { "id": "l1", "label": "Altimeters", "detail": "SET QNH" },
+        { "id": "l2", "label": "Approach speeds", "detail": "SET (Vref)" },
+        { "id": "l3", "label": "Landing gear", "detail": "DOWN" },
+        { "id": "l4", "label": "Flaps", "detail": "LANDING" },
+        { "id": "l5", "label": "Speedbrake", "detail": "ARMED" }
+      ]
+    },
+    {
+      "id": "shutdown",
+      "title": "Parking / Shutdown",
+      "image": "/images/boeing-747-8/shutdown.svg",
+      "items": [
+        { "id": "s1", "label": "Parking brake", "detail": "SET" },
+        { "id": "s2", "label": "Fuel control switches", "detail": "CUTOFF" },
+        { "id": "s3", "label": "Beacon", "detail": "OFF" },
+        { "id": "s4", "label": "APU", "detail": "AS REQUIRED" },
+        { "id": "s5", "label": "Doors", "detail": "DISARM" }
+      ]
+    }
+  ]
+}

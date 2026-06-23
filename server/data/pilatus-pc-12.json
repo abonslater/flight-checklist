@@ -1,0 +1,750 @@
+{
+  "id": "pilatus-pc-12",
+  "make": "Pilatus",
+  "model": "PC-12",
+  "thumbnail": "/images/pilatus-pc-12/thumb.png",
+  "isTemplate": true,
+  "sections": [
+    {
+      "id": "section-new-1",
+      "title": "Pre-Start",
+      "image": "",
+      "items": [
+        {
+          "id": "item-new-3",
+          "label": "Parking Brakes",
+          "detail": "SET"
+        },
+        {
+          "id": "item-new-5",
+          "label": "Throttle",
+          "detail": "IDLE"
+        },
+        {
+          "id": "item-new-7",
+          "label": "Battery",
+          "detail": "OFF"
+        },
+        {
+          "id": "item-new-9",
+          "label": "Avionics Master Switch",
+          "detail": "OFF"
+        }
+      ]
+    },
+    {
+      "id": "section-new-11",
+      "title": "Startup",
+      "image": "",
+      "items": [
+        {
+          "id": "item-new-13",
+          "label": "Engine and Propeller Area",
+          "detail": "CLEAR"
+        },
+        {
+          "id": "item-new-265",
+          "label": "Throttle",
+          "detail": "IDLE"
+        },
+        {
+          "id": "item-new-267",
+          "label": "Fuel Pump 1+2",
+          "detail": "ON"
+        },
+        {
+          "id": "item-new-269",
+          "label": "Fuel Pump 1+2 Annunciator",
+          "detail": "CHECK ON"
+        },
+        {
+          "id": "item-new-271",
+          "label": "Engine Ignition",
+          "detail": "ON"
+        },
+        {
+          "id": "item-new-273",
+          "label": "Start Button",
+          "detail": "ON/PUSH"
+        },
+        {
+          "id": "item-new-275",
+          "label": "Fuel Flow",
+          "detail": "FULL (Ctrl-Shift-F4)"
+        },
+        {
+          "id": "item-new-277",
+          "label": "At NG ~ 10         Set Cond. Lever to",
+          "detail": "GROUND IDLE => Eng. Started!"
+        },
+        {
+          "id": "item-new-279",
+          "label": "Gen 1+2",
+          "detail": "ON"
+        },
+        {
+          "id": "item-new-281",
+          "label": "Gen 1+2 Annunciator",
+          "detail": "CHECK EXTINGUISHED"
+        },
+        {
+          "id": "item-new-283",
+          "label": "Oil Pressure",
+          "detail": "CHECK  10psi"
+        },
+        {
+          "id": "item-new-285",
+          "label": "Loadmeter+Voltmeter",
+          "detail": "CHECK for CHARGE"
+        },
+        {
+          "id": "item-new-287",
+          "label": "Engine Display Unit",
+          "detail": "TEST"
+        }
+      ]
+    },
+    {
+      "id": "section-new-15",
+      "title": "Before Taxi",
+      "image": "",
+      "items": [
+        {
+          "id": "item-new-17",
+          "label": "Nav Lights",
+          "detail": "ON"
+        },
+        {
+          "id": "item-new-19",
+          "label": "Taxi Lights",
+          "detail": "ON"
+        },
+        {
+          "id": "item-new-251",
+          "label": "Heading Indicator / Altimeter",
+          "detail": "SET"
+        },
+        {
+          "id": "item-new-253",
+          "label": "Instruments",
+          "detail": "NORMAL OPERATION"
+        },
+        {
+          "id": "item-new-255",
+          "label": "Radios and Avionics",
+          "detail": "CHECKED and SET"
+        },
+        {
+          "id": "item-new-257",
+          "label": "Autopilot",
+          "detail": "SET and OFF"
+        },
+        {
+          "id": "item-new-259",
+          "label": "F/D",
+          "detail": "ON"
+        },
+        {
+          "id": "item-new-261",
+          "label": "Yaw Damper",
+          "detail": "ON"
+        },
+        {
+          "id": "item-new-263",
+          "label": "Request Taxi Clearance",
+          "detail": ""
+        }
+      ]
+    },
+    {
+      "id": "section-new-21",
+      "title": "Taxi",
+      "image": "",
+      "items": [
+        {
+          "id": "item-new-23",
+          "label": "Parking Brake",
+          "detail": "RELEASE"
+        },
+        {
+          "id": "item-new-25",
+          "label": "Taxi to assigned runway",
+          "detail": "SPEED Max. 20 knots"
+        },
+        {
+          "id": "item-new-27",
+          "label": "Brakes",
+          "detail": "CHECK during taxi"
+        },
+        {
+          "id": "item-new-29",
+          "label": "Directional Gyro",
+          "detail": "PROPER IND. during turns"
+        },
+        {
+          "id": "item-new-31",
+          "label": "Artificial Horizon",
+          "detail": "ERECT during turns"
+        }
+      ]
+    },
+    {
+      "id": "section-new-33",
+      "title": "Before Take-off",
+      "image": "",
+      "items": [
+        {
+          "id": "item-new-35",
+          "label": "Parking Brake",
+          "detail": "SET"
+        },
+        {
+          "id": "item-new-37",
+          "label": "Fuel Quantity",
+          "detail": "CHECK"
+        },
+        {
+          "id": "item-new-39",
+          "label": "Throttle",
+          "detail": "IDLE"
+        },
+        {
+          "id": "item-new-41",
+          "label": "Conditioner Lever to",
+          "detail": "FLIGHT IDLE"
+        },
+        {
+          "id": "item-new-43",
+          "label": "Elevator Trim",
+          "detail": "SET for takeoff (+3)"
+        },
+        {
+          "id": "item-new-45",
+          "label": "Flaps",
+          "detail": "15 deg"
+        },
+        {
+          "id": "item-new-47",
+          "label": "Engine/Flight Instruments",
+          "detail": "CHECK"
+        },
+        {
+          "id": "item-new-49",
+          "label": "Flight Controls",
+          "detail": "FREE AND CORRECT"
+        },
+        {
+          "id": "item-new-51",
+          "label": "Landing Lights",
+          "detail": "ON"
+        },
+        {
+          "id": "item-new-53",
+          "label": "Taxi Lights",
+          "detail": "OFF"
+        },
+        {
+          "id": "item-new-55",
+          "label": "Strobe Light",
+          "detail": "ON"
+        },
+        {
+          "id": "item-new-57",
+          "label": "Pitot Heat",
+          "detail": "ON"
+        },
+        {
+          "id": "item-new-59",
+          "label": "Probe / De-ice Switch / Heating",
+          "detail": "ON if required"
+        },
+        {
+          "id": "item-new-61",
+          "label": "Transponder",
+          "detail": "ON"
+        },
+        {
+          "id": "item-new-63",
+          "label": "Radios and Avionics",
+          "detail": "SET"
+        },
+        {
+          "id": "item-new-65",
+          "label": "Annunciator Lights",
+          "detail": "CHECK"
+        }
+      ]
+    },
+    {
+      "id": "section-new-67",
+      "title": "Take-off",
+      "image": "",
+      "items": [
+        {
+          "id": "item-new-69",
+          "label": "Smoothly increase thrust to",
+          "detail": "FULL"
+        },
+        {
+          "id": "item-new-71",
+          "label": "Brakes",
+          "detail": "RELEASE"
+        },
+        {
+          "id": "item-new-73",
+          "label": "V1 =",
+          "detail": "80 KIAS (descision)"
+        },
+        {
+          "id": "item-new-75",
+          "label": "Vr =",
+          "detail": "85 KIAS (rotate)"
+        },
+        {
+          "id": "item-new-77",
+          "label": "Pitch",
+          "detail": "10 degrees"
+        },
+        {
+          "id": "item-new-79",
+          "label": "At Positive Climb Rate",
+          "detail": "Touch Brakes"
+        },
+        {
+          "id": "item-new-81",
+          "label": "Landing Gear",
+          "detail": "RETRACT"
+        },
+        {
+          "id": "item-new-83",
+          "label": "Trim for climb to maintain",
+          "detail": "120 KIAS"
+        },
+        {
+          "id": "item-new-85",
+          "label": "Flaps",
+          "detail": "RETRACT"
+        },
+        {
+          "id": "item-new-87",
+          "label": "Annunciator Lights",
+          "detail": "CHECK"
+        },
+        {
+          "id": "item-new-89",
+          "label": "Engine Instruments",
+          "detail": "CHECK"
+        }
+      ]
+    },
+    {
+      "id": "section-new-91",
+      "title": "Climb-out",
+      "image": "",
+      "items": [
+        {
+          "id": "item-new-93",
+          "label": "Autopilot",
+          "detail": "CHECK and SET"
+        },
+        {
+          "id": "item-new-95",
+          "label": "Landing Lights",
+          "detail": "OFF"
+        },
+        {
+          "id": "item-new-97",
+          "label": "Airspeed",
+          "detail": "160 KIAS         Torque 30"
+        },
+        {
+          "id": "item-new-99",
+          "label": "Climb Rate",
+          "detail": "1500 fpm"
+        },
+        {
+          "id": "item-new-101",
+          "label": "At 12’000 ft",
+          "detail": "150 KIAS, Torque 25, 1300 fpm"
+        },
+        {
+          "id": "item-new-103",
+          "label": "At 18’000 ft",
+          "detail": "130 KIAS, Torque 22, 1000 fpm"
+        },
+        {
+          "id": "item-new-105",
+          "label": "Engine Instruments",
+          "detail": "MONITOR"
+        },
+        {
+          "id": "item-new-107",
+          "label": "ATC",
+          "detail": "AS REQUIRED"
+        },
+        {
+          "id": "item-new-109",
+          "label": "At Transition Altitude (FL180)",
+          "detail": "set Altimeter to 29,92\" (1013mb)"
+        }
+      ]
+    },
+    {
+      "id": "section-new-111",
+      "title": "Cruise",
+      "image": "",
+      "items": [
+        {
+          "id": "item-new-113",
+          "label": "Accelerate to cruise speed",
+          "detail": "18’000 ft   200 KIAS         Torque 40"
+        },
+        {
+          "id": "item-new-115",
+          "label": "Accelerate to cruise speed",
+          "detail": " 24’000 ft   180 KIAS         Torque 34"
+        },
+        {
+          "id": "item-new-117",
+          "label": "Service Ceiling",
+          "detail": "25’-27’000 ft"
+        },
+        {
+          "id": "item-new-119",
+          "label": "Engine+Instruments",
+          "detail": "CHECK"
+        },
+        {
+          "id": "item-new-121",
+          "label": "Engine Temperatures",
+          "detail": "STABILIZE at cruise cond."
+        },
+        {
+          "id": "item-new-123",
+          "label": "Fuel Quantity",
+          "detail": "CHECK"
+        },
+        {
+          "id": "item-new-125",
+          "label": "Radios",
+          "detail": "TUNED and SET"
+        },
+        {
+          "id": "item-new-127",
+          "label": "Autopilot",
+          "detail": "CHECK and SET"
+        },
+        {
+          "id": "item-new-129",
+          "label": "Lights",
+          "detail": "as required"
+        }
+      ]
+    },
+    {
+      "id": "section-new-131",
+      "title": "Descent",
+      "image": "",
+      "items": [
+        {
+          "id": "item-new-133",
+          "label": "Atis/Airport Information",
+          "detail": "CHECK"
+        },
+        {
+          "id": "item-new-135",
+          "label": "Altimeter",
+          "detail": "CHECK"
+        },
+        {
+          "id": "item-new-137",
+          "label": "Radios",
+          "detail": "SET"
+        },
+        {
+          "id": "item-new-139",
+          "label": "Descent Speed",
+          "detail": "160 KIAS          Torque 10"
+        },
+        {
+          "id": "item-new-141",
+          "label": "Descent Rate",
+          "detail": "-1500 fpm"
+        },
+        {
+          "id": "item-new-143",
+          "label": "Flaps",
+          "detail": "CHECK UP"
+        },
+        {
+          "id": "item-new-145",
+          "label": "Landing Gear",
+          "detail": "CHECK UP"
+        },
+        {
+          "id": "item-new-147",
+          "label": "At Transition Altitude (FL180)",
+          "detail": "reset Altimeter to local"
+        },
+        {
+          "id": "item-new-149",
+          "label": "Check Weather",
+          "detail": "(ATIS, Flight Services)"
+        }
+      ]
+    },
+    {
+      "id": "section-new-153",
+      "title": "Approach",
+      "image": "",
+      "items": [
+        {
+          "id": "item-new-155",
+          "label": "Localizer Level Flight:",
+          "detail": ""
+        },
+        {
+          "id": "item-new-157",
+          "label": "Landing Lights",
+          "detail": "120 KIAS          Torque 10"
+        },
+        {
+          "id": "item-new-159",
+          "label": "Flaps",
+          "detail": "15 deg"
+        },
+        {
+          "id": "item-new-161",
+          "label": "Speed: Establish",
+          "detail": "105 KIAS          Torque 10"
+        },
+        {
+          "id": "item-new-163",
+          "label": "Flaps",
+          "detail": "30 deg"
+        },
+        {
+          "id": "item-new-165",
+          "label": "Speed: Establish",
+          "detail": "100 KIAS          Torque 11"
+        },
+        {
+          "id": "item-new-167",
+          "label": "Landing Gear",
+          "detail": "DOWN"
+        },
+        {
+          "id": "item-new-169",
+          "label": "Turning toward runway: set flaps",
+          "detail": "FULL DOWN"
+        },
+        {
+          "id": "item-new-171",
+          "label": "Final Glideslope Descent:",
+          "detail": ""
+        },
+        {
+          "id": "item-new-173",
+          "label": "Speed: Establish",
+          "detail": "90 KIAS            Torque 08"
+        },
+        {
+          "id": "item-new-175",
+          "label": "Elevator Trim",
+          "detail": "AS DESIRED"
+        },
+        {
+          "id": "item-new-177",
+          "label": "Parking Brake",
+          "detail": "VERIFY OFF"
+        }
+      ]
+    },
+    {
+      "id": "section-new-179",
+      "title": "Landing",
+      "image": "",
+      "items": [
+        {
+          "id": "item-new-181",
+          "label": "Landing Gear",
+          "detail": "CHECK DOWN, 3 GREEN"
+        },
+        {
+          "id": "item-new-183",
+          "label": "Autopilot",
+          "detail": "OFF"
+        },
+        {
+          "id": "item-new-185",
+          "label": "Landing Speed",
+          "detail": "85 KIAS"
+        },
+        {
+          "id": "item-new-187",
+          "label": "Touchdown",
+          "detail": "MAIN WHEELS FIRST"
+        },
+        {
+          "id": "item-new-189",
+          "label": "Landing Roll",
+          "detail": "LOWER NOSE WHEEL"
+        },
+        {
+          "id": "item-new-191",
+          "label": "After touchdown",
+          "detail": "Apply Reverse Thrust, at 60 kts: Cancel Reverse Thrust"
+        }
+      ]
+    },
+    {
+      "id": "section-new-193",
+      "title": "Taxi To Ramp",
+      "image": "",
+      "items": [
+        {
+          "id": "item-new-195",
+          "label": "Strobe Light",
+          "detail": "OFF"
+        },
+        {
+          "id": "item-new-197",
+          "label": "Flaps",
+          "detail": "RETRACT"
+        },
+        {
+          "id": "item-new-199",
+          "label": "Taxi Lights",
+          "detail": "ON"
+        },
+        {
+          "id": "item-new-201",
+          "label": "Landing Lights",
+          "detail": "OFF"
+        },
+        {
+          "id": "item-new-203",
+          "label": "Probe / De-ice Switch / Heating",
+          "detail": "OFF"
+        },
+        {
+          "id": "item-new-205",
+          "label": "Transponder",
+          "detail": "1200"
+        },
+        {
+          "id": "item-new-207",
+          "label": "Conditioner Lever",
+          "detail": "GROUND IDLE"
+        },
+        {
+          "id": "item-new-209",
+          "label": "Speed",
+          "detail": "Max. 20 knots"
+        },
+        {
+          "id": "item-new-211",
+          "label": "Elevator Trim",
+          "detail": "TAKEOFF SETTING (+3)"
+        },
+        {
+          "id": "item-new-213",
+          "label": "Avionics/Radios",
+          "detail": "AS REQUIRED"
+        }
+      ]
+    },
+    {
+      "id": "section-new-215",
+      "title": "Shutdown",
+      "image": "",
+      "items": [
+        {
+          "id": "item-new-217",
+          "label": "Parking Brake",
+          "detail": "SET"
+        },
+        {
+          "id": "item-new-219",
+          "label": "Throttle",
+          "detail": "IDLE"
+        },
+        {
+          "id": "item-new-221",
+          "label": "Conditioner Lever",
+          "detail": "CUTOFF / FEATHER"
+        },
+        {
+          "id": "item-new-223",
+          "label": "Taxi Lights",
+          "detail": "OFF"
+        },
+        {
+          "id": "item-new-225",
+          "label": "Nav Lights",
+          "detail": "OFF"
+        },
+        {
+          "id": "item-new-227",
+          "label": "F/D",
+          "detail": "OFF"
+        },
+        {
+          "id": "item-new-229",
+          "label": "Avionics Master Switch",
+          "detail": "OFF"
+        },
+        {
+          "id": "item-new-231",
+          "label": "Lights",
+          "detail": "OFF"
+        },
+        {
+          "id": "item-new-233",
+          "label": "Pitot Heat",
+          "detail": "OFF"
+        },
+        {
+          "id": "item-new-235",
+          "label": "Fuel Flow",
+          "detail": "CUTOFF (Ctrl-Shift-F1)"
+        },
+        {
+          "id": "item-new-237",
+          "label": "Engine Ignition",
+          "detail": "OFF"
+        },
+        {
+          "id": "item-new-239",
+          "label": "Fuel Pump 1+2",
+          "detail": "OFF"
+        },
+        {
+          "id": "item-new-241",
+          "label": "Wing Lights",
+          "detail": "OFF"
+        },
+        {
+          "id": "item-new-243",
+          "label": "Recogn. Beacon",
+          "detail": "OFF"
+        },
+        {
+          "id": "item-new-245",
+          "label": "Inst/Panel Lights",
+          "detail": "OFF"
+        },
+        {
+          "id": "item-new-247",
+          "label": "Battery Switch",
+          "detail": "OFF"
+        },
+        {
+          "id": "item-new-249",
+          "label": "Gen 1+2",
+          "detail": "OFF"
+        }
+      ]
+    }
+  ]
+}

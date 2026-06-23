@@ -1,0 +1,888 @@
+{
+  "id": "airbus-a320neo",
+  "make": "Airbus",
+  "model": "A320neo",
+  "thumbnail": "/images/airbus-a320neo/airbus-a321neo.png",
+  "isTemplate": false,
+  "pdf": "/pdfs/airbus-a320neo.pdf",
+  "specs": {
+    "weight": [
+      {
+        "label": "Max Ramp Weight",
+        "value": "79,400 kg (175,047 lb)"
+      },
+      {
+        "label": "Max Takeoff Weight",
+        "value": "79,000 kg (174,165 lb)"
+      },
+      {
+        "label": "Max Landing Weight",
+        "value": "67,400 kg (148,591 lb)"
+      },
+      {
+        "label": "Max Zero Fuel Weight",
+        "value": "64,300 kg (141,757 lb)"
+      },
+      {
+        "label": "Typical Fuel Capacity",
+        "value": "~6,300 US gal / 23,860 L"
+      }
+    ],
+    "dimensions": [
+      {
+        "label": "Wingspan",
+        "value": "35.80 m (117.45 ft)"
+      },
+      {
+        "label": "Length",
+        "value": "37.57 m (123.27 ft)"
+      },
+      {
+        "label": "Height",
+        "value": "11.76 m (38.58 ft)"
+      },
+      {
+        "label": "Typical Seats",
+        "value": "150-180"
+      },
+      {
+        "label": "Maximum Seating",
+        "value": "194"
+      }
+    ],
+    "performance": [
+      {
+        "label": "Range",
+        "value": "3,400 NM / 6,300 km"
+      },
+      {
+        "label": "Maximum Operating Speed",
+        "value": "M 0.82"
+      },
+      {
+        "label": "Typical Cruise",
+        "value": "M 0.78"
+      },
+      {
+        "label": "Service Ceiling",
+        "value": "39,800 ft"
+      },
+      {
+        "label": "Engines",
+        "value": "CFM LEAP-1A / PW1100G"
+      },
+      {
+        "label": "VFE CONF 1",
+        "value": "230 KIAS VFE CONF 1+F 215 KIAS"
+      },
+      {
+        "label": "VFE CONF 2",
+        "value": "200 KIAS VFE CONF 3 185 KIAS"
+      },
+      {
+        "label": "VFE FULL",
+        "value": "177 KIAS VLE 280 KIAS / M0.67"
+      },
+      {
+        "label": "VLO Extension",
+        "value": "250 KIAS VLO Retraction 220 KIAS"
+      },
+      {
+        "label": "VMO/MMO 350 KIAS / M0.82 Green Dot",
+        "value": "FMS calculated"
+      },
+      {
+        "label": "S/F Speeds FMS calculated VAPP",
+        "value": "FMS PERF APPR"
+      }
+    ],
+    "speeds": []
+  },
+  "sections": [
+    {
+      "id": "section-new-739",
+      "title": "Preflight",
+      "image": "/images/airbus-a320neo/pre-start.png",
+      "items": [
+        {
+          "id": "item-new-740",
+          "label": "Preflight inspection",
+          "detail": "COMPLETED"
+        },
+        {
+          "id": "item-new-741",
+          "label": "Parking brake",
+          "detail": "SET"
+        },
+        {
+          "id": "item-new-742",
+          "label": "Bat 1 / bat 2",
+          "detail": "ON"
+        },
+        {
+          "id": "item-new-743",
+          "label": "Ext pwr / apu",
+          "detail": "AS REQUIRED"
+        },
+        {
+          "id": "item-new-744",
+          "label": "Adirs",
+          "detail": "NAV"
+        },
+        {
+          "id": "item-new-745",
+          "label": "Fuel quantity",
+          "detail": "CHECK"
+        },
+        {
+          "id": "item-new-746",
+          "label": "Oxygen",
+          "detail": "TEST"
+        },
+        {
+          "id": "item-new-747",
+          "label": "Signs",
+          "detail": "ON/AUTO"
+        },
+        {
+          "id": "item-new-748",
+          "label": "Mcdu / init",
+          "detail": "COMPLETE"
+        },
+        {
+          "id": "item-new-749",
+          "label": "Flight plan",
+          "detail": "ENTERED"
+        },
+        {
+          "id": "item-new-750",
+          "label": "Perf data",
+          "detail": "SET"
+        },
+        {
+          "id": "item-new-751",
+          "label": "Baro ref",
+          "detail": "SET"
+        },
+        {
+          "id": "item-new-752",
+          "label": "Windows / doors",
+          "detail": "CLOSED"
+        }
+      ]
+    },
+    {
+      "id": "section-new-753",
+      "title": "Before start",
+      "image": "/images/airbus-a320neo/pre-start.png",
+      "items": [
+        {
+          "id": "item-new-754",
+          "label": "Cockpit prep",
+          "detail": "COMPLETED"
+        },
+        {
+          "id": "item-new-755",
+          "label": "Acars init",
+          "detail": "COMPLETED"
+        },
+        {
+          "id": "item-new-756",
+          "label": "Gear pins & covers",
+          "detail": "REMOVED"
+        },
+        {
+          "id": "item-new-757",
+          "label": "Beacon",
+          "detail": "ON"
+        },
+        {
+          "id": "item-new-758",
+          "label": "Thrust levers",
+          "detail": "IDLE"
+        },
+        {
+          "id": "item-new-759",
+          "label": "Parking brake",
+          "detail": "AS REQUIRED"
+        },
+        {
+          "id": "item-new-760",
+          "label": "Transponder",
+          "detail": "AS REQUIRED"
+        },
+        {
+          "id": "item-new-761",
+          "label": "Apu bleed",
+          "detail": "ON"
+        },
+        {
+          "id": "item-new-762",
+          "label": "Fuel pumps",
+          "detail": "ON"
+        },
+        {
+          "id": "item-new-763",
+          "label": "Anti-collision light",
+          "detail": "ON"
+        }
+      ]
+    },
+    {
+      "id": "section-new-764",
+      "title": "Engine start",
+      "image": "/images/airbus-a320neo/startup.png",
+      "items": [
+        {
+          "id": "item-new-765",
+          "label": "Engine mode selector",
+          "detail": "IGN/START"
+        },
+        {
+          "id": "item-new-766",
+          "label": "Engine 2 master",
+          "detail": "ON"
+        },
+        {
+          "id": "item-new-767",
+          "label": "N2 rise",
+          "detail": "MONITOR"
+        },
+        {
+          "id": "item-new-768",
+          "label": "Eng 2 avail",
+          "detail": "CHECK"
+        },
+        {
+          "id": "item-new-769",
+          "label": "Engine 1 master",
+          "detail": "ON"
+        },
+        {
+          "id": "item-new-770",
+          "label": "N2 rise",
+          "detail": "MONITOR"
+        },
+        {
+          "id": "item-new-771",
+          "label": "Eng 1 avail",
+          "detail": "CHECK"
+        },
+        {
+          "id": "item-new-772",
+          "label": "Engine mode selector",
+          "detail": "NORM"
+        },
+        {
+          "id": "item-new-773",
+          "label": "Apu bleed",
+          "detail": "OFF"
+        },
+        {
+          "id": "item-new-774",
+          "label": "Apu master",
+          "detail": "OFF"
+        },
+        {
+          "id": "item-new-775",
+          "label": "Anti-ice",
+          "detail": "AS REQUIRED"
+        },
+        {
+          "id": "item-new-776",
+          "label": "Ecam status",
+          "detail": "CHECK"
+        }
+      ]
+    },
+    {
+      "id": "section-new-777",
+      "title": "Before taxi",
+      "image": "/images/airbus-a320neo/before-taxi.png",
+      "items": [
+        {
+          "id": "item-new-778",
+          "label": "Pitch trim",
+          "detail": "SET"
+        },
+        {
+          "id": "item-new-779",
+          "label": "Rudder trim",
+          "detail": "ZERO"
+        },
+        {
+          "id": "item-new-780",
+          "label": "Flaps",
+          "detail": "TAKEOFF CONFIG"
+        },
+        {
+          "id": "item-new-781",
+          "label": "Spoilers",
+          "detail": "ARM"
+        },
+        {
+          "id": "item-new-782",
+          "label": "Auto brake",
+          "detail": "MAX"
+        },
+        {
+          "id": "item-new-783",
+          "label": "T.o. config",
+          "detail": "TEST / NORM"
+        },
+        {
+          "id": "item-new-784",
+          "label": "Ground equipment",
+          "detail": "CLEAR"
+        },
+        {
+          "id": "item-new-785",
+          "label": "Taxi light",
+          "detail": "ON"
+        },
+        {
+          "id": "item-new-786",
+          "label": "Parking brake",
+          "detail": "RELEASED"
+        },
+        {
+          "id": "item-new-787",
+          "label": "Brakes",
+          "detail": "CHECK"
+        },
+        {
+          "id": "item-new-788",
+          "label": "Flight controls",
+          "detail": "CHECKED"
+        }
+      ]
+    },
+    {
+      "id": "section-new-789",
+      "title": "Before takeoff",
+      "image": "/images/airbus-a320neo/before-take-off.png",
+      "items": [
+        {
+          "id": "item-new-790",
+          "label": "Flight controls",
+          "detail": "CHECKED"
+        },
+        {
+          "id": "item-new-791",
+          "label": "Flight instruments",
+          "detail": "CHECKED"
+        },
+        {
+          "id": "item-new-792",
+          "label": "Briefing",
+          "detail": "CONFIRMED"
+        },
+        {
+          "id": "item-new-793",
+          "label": "Flap setting",
+          "detail": "CONFIRM"
+        },
+        {
+          "id": "item-new-794",
+          "label": "V1 / vr / v2 / flex temp",
+          "detail": "ANNOUNCE"
+        },
+        {
+          "id": "item-new-795",
+          "label": "Atc / transponder",
+          "detail": "SET"
+        },
+        {
+          "id": "item-new-796",
+          "label": "Ecam memo",
+          "detail": "TO NO BLUE"
+        },
+        {
+          "id": "item-new-797",
+          "label": "Cabin crew",
+          "detail": "ADVISED"
+        },
+        {
+          "id": "item-new-798",
+          "label": "Takeoff runway",
+          "detail": "CONFIRMED"
+        }
+      ]
+    },
+    {
+      "id": "section-new-799",
+      "title": "Normal takeoff",
+      "image": "/images/airbus-a320neo/take-off.png",
+      "items": [
+        {
+          "id": "item-new-800",
+          "label": "Chrono",
+          "detail": "START"
+        },
+        {
+          "id": "item-new-801",
+          "label": "Thrust levers",
+          "detail": "FLEX/MCT or TOGA"
+        },
+        {
+          "id": "item-new-802",
+          "label": "Engine instruments",
+          "detail": "CHECK"
+        },
+        {
+          "id": "item-new-803",
+          "label": "Fma",
+          "detail": "CHECK"
+        },
+        {
+          "id": "item-new-804",
+          "label": "V1",
+          "detail": "MONITOR"
+        },
+        {
+          "id": "item-new-805",
+          "label": "Vr",
+          "detail": "ROTATE"
+        },
+        {
+          "id": "item-new-806",
+          "label": "Pitch attitude",
+          "detail": "15 deg target"
+        },
+        {
+          "id": "item-new-807",
+          "label": "Positive rate",
+          "detail": "GEAR UP"
+        },
+        {
+          "id": "item-new-808",
+          "label": "Ap above 100 ft agl",
+          "detail": "AS REQUIRED"
+        }
+      ]
+    },
+    {
+      "id": "section-new-809",
+      "title": "Climb",
+      "image": "/images/airbus-a320neo/climb-out.png",
+      "items": [
+        {
+          "id": "item-new-810",
+          "label": "Thrust reduction alt",
+          "detail": "CLB DETENT"
+        },
+        {
+          "id": "item-new-811",
+          "label": "Acceleration alt",
+          "detail": "PITCH / SPEED"
+        },
+        {
+          "id": "item-new-812",
+          "label": "Flaps",
+          "detail": "RETRACT ON S/F"
+        },
+        {
+          "id": "item-new-813",
+          "label": "Landing gear",
+          "detail": "UP"
+        },
+        {
+          "id": "item-new-814",
+          "label": "Packs",
+          "detail": "ON"
+        },
+        {
+          "id": "item-new-815",
+          "label": "Baro ref above trans alt",
+          "detail": "STD"
+        },
+        {
+          "id": "item-new-816",
+          "label": "Ecam",
+          "detail": "MONITOR"
+        },
+        {
+          "id": "item-new-817",
+          "label": "Seat belts",
+          "detail": "AS REQUIRED"
+        }
+      ]
+    },
+    {
+      "id": "section-new-818",
+      "title": "Cruise",
+      "image": "/images/airbus-a320neo/cruise.png",
+      "items": [
+        {
+          "id": "item-new-819",
+          "label": "Fma / nav",
+          "detail": "MONITOR"
+        },
+        {
+          "id": "item-new-820",
+          "label": "Ecam memo",
+          "detail": "MONITOR"
+        },
+        {
+          "id": "item-new-821",
+          "label": "Fuel",
+          "detail": "MONITOR"
+        },
+        {
+          "id": "item-new-822",
+          "label": "Progress page",
+          "detail": "CHECK"
+        },
+        {
+          "id": "item-new-823",
+          "label": "Radar / anti-ice",
+          "detail": "AS REQUIRED"
+        }
+      ]
+    },
+    {
+      "id": "section-new-824",
+      "title": "Descent",
+      "image": "/images/airbus-a320neo/descent.png",
+      "items": [
+        {
+          "id": "item-new-825",
+          "label": "Approach briefing",
+          "detail": "COMPLETE"
+        },
+        {
+          "id": "item-new-826",
+          "label": "Fmgs arrival / appr",
+          "detail": "SET"
+        },
+        {
+          "id": "item-new-827",
+          "label": "Rad nav / ls",
+          "detail": "AS REQUIRED"
+        },
+        {
+          "id": "item-new-828",
+          "label": "Qnh destination",
+          "detail": "SET"
+        },
+        {
+          "id": "item-new-829",
+          "label": "Minimums",
+          "detail": "SET"
+        },
+        {
+          "id": "item-new-830",
+          "label": "Seat belts",
+          "detail": "ON"
+        },
+        {
+          "id": "item-new-831",
+          "label": "Baro ref below trans lvl",
+          "detail": "LOCAL"
+        },
+        {
+          "id": "item-new-832",
+          "label": "Anti-ice",
+          "detail": "AS REQUIRED"
+        }
+      ]
+    },
+    {
+      "id": "section-new-833",
+      "title": "Securing aircraft",
+      "image": "/images/airbus-a320neo/thumb.png",
+      "items": [
+        {
+          "id": "item-new-834",
+          "label": "Adirs",
+          "detail": "OFF"
+        },
+        {
+          "id": "item-new-835",
+          "label": "Oxygen",
+          "detail": "OFF"
+        },
+        {
+          "id": "item-new-836",
+          "label": "Apu bleed",
+          "detail": "OFF"
+        },
+        {
+          "id": "item-new-837",
+          "label": "Emer exit lights",
+          "detail": "OFF"
+        },
+        {
+          "id": "item-new-838",
+          "label": "Signs",
+          "detail": "AS REQUIRED"
+        },
+        {
+          "id": "item-new-839",
+          "label": "Apu master",
+          "detail": "OFF"
+        },
+        {
+          "id": "item-new-840",
+          "label": "Bat 1 / bat 2",
+          "detail": "OFF"
+        }
+      ]
+    },
+    {
+      "id": "section-new-841",
+      "title": "Approach",
+      "image": "/images/airbus-a320neo/approach.png",
+      "items": [
+        {
+          "id": "item-new-842",
+          "label": "Approach phase",
+          "detail": "ACTIVATE"
+        },
+        {
+          "id": "item-new-843",
+          "label": "Ls / appr mode",
+          "detail": "AS REQUIRED"
+        },
+        {
+          "id": "item-new-844",
+          "label": "Speed",
+          "detail": "MANAGED"
+        },
+        {
+          "id": "item-new-845",
+          "label": "Flaps 1",
+          "detail": "BELOW VFE"
+        },
+        {
+          "id": "item-new-846",
+          "label": "Flaps 2",
+          "detail": "BELOW VFE"
+        },
+        {
+          "id": "item-new-847",
+          "label": "Landing gear",
+          "detail": "DOWN"
+        },
+        {
+          "id": "item-new-848",
+          "label": "Spoilers",
+          "detail": "ARM"
+        },
+        {
+          "id": "item-new-849",
+          "label": "Auto brake",
+          "detail": "AS REQUIRED"
+        },
+        {
+          "id": "item-new-850",
+          "label": "Flaps 3 / full",
+          "detail": "SET"
+        },
+        {
+          "id": "item-new-851",
+          "label": "Ecam memo",
+          "detail": "LDG NO BLUE"
+        }
+      ]
+    },
+    {
+      "id": "section-new-852",
+      "title": "Landing",
+      "image": "/images/airbus-a320neo/landing.png",
+      "items": [
+        {
+          "id": "item-new-853",
+          "label": "Cabin crew",
+          "detail": "ADVISED"
+        },
+        {
+          "id": "item-new-854",
+          "label": "Auto thrust",
+          "detail": "SPEED/OFF"
+        },
+        {
+          "id": "item-new-855",
+          "label": "Landing gear",
+          "detail": "DOWN"
+        },
+        {
+          "id": "item-new-856",
+          "label": "Signs",
+          "detail": "ON"
+        },
+        {
+          "id": "item-new-857",
+          "label": "Spoilers",
+          "detail": "ARM"
+        },
+        {
+          "id": "item-new-858",
+          "label": "Flaps",
+          "detail": "SET"
+        },
+        {
+          "id": "item-new-859",
+          "label": "Approach speed",
+          "detail": "VAPP"
+        },
+        {
+          "id": "item-new-860",
+          "label": "Landing lights",
+          "detail": "ON"
+        },
+        {
+          "id": "item-new-861",
+          "label": "At 20 ft",
+          "detail": "RETARD"
+        },
+        {
+          "id": "item-new-862",
+          "label": "Reversers",
+          "detail": "AS REQUIRED"
+        }
+      ]
+    },
+    {
+      "id": "section-new-863",
+      "title": "Go around",
+      "image": "/images/airbus-a320neo/thumb.png",
+      "items": [
+        {
+          "id": "item-new-864",
+          "label": "Thrust levers",
+          "detail": "TOGA"
+        },
+        {
+          "id": "item-new-865",
+          "label": "Pitch",
+          "detail": "15 deg"
+        },
+        {
+          "id": "item-new-866",
+          "label": "Flaps",
+          "detail": "ONE STEP UP"
+        },
+        {
+          "id": "item-new-867",
+          "label": "Positive climb",
+          "detail": "GEAR UP"
+        },
+        {
+          "id": "item-new-868",
+          "label": "Srs / ga trk",
+          "detail": "CHECK"
+        },
+        {
+          "id": "item-new-869",
+          "label": "Accel alt",
+          "detail": "RETRACT FLAPS"
+        },
+        {
+          "id": "item-new-870",
+          "label": "Thrust levers",
+          "detail": "CLB"
+        },
+        {
+          "id": "item-new-871",
+          "label": "Nav / ap",
+          "detail": "AS REQUIRED"
+        }
+      ]
+    },
+    {
+      "id": "section-new-872",
+      "title": "After landing",
+      "image": "/images/airbus-a320neo/taxi-to-ramp.png",
+      "items": [
+        {
+          "id": "item-new-873",
+          "label": "Spoilers",
+          "detail": "DISARM"
+        },
+        {
+          "id": "item-new-874",
+          "label": "Flaps",
+          "detail": "RETRACTED"
+        },
+        {
+          "id": "item-new-875",
+          "label": "Apu",
+          "detail": "START"
+        },
+        {
+          "id": "item-new-876",
+          "label": "Radar",
+          "detail": "OFF"
+        },
+        {
+          "id": "item-new-877",
+          "label": "Pws",
+          "detail": "OFF"
+        },
+        {
+          "id": "item-new-878",
+          "label": "Exterior lights",
+          "detail": "AS REQUIRED"
+        },
+        {
+          "id": "item-new-879",
+          "label": "Tcas",
+          "detail": "STBY"
+        },
+        {
+          "id": "item-new-880",
+          "label": "Brakes temp",
+          "detail": "CHECK"
+        }
+      ]
+    },
+    {
+      "id": "section-new-881",
+      "title": "Parking",
+      "image": "/images/airbus-a320neo/shutdown.png",
+      "items": [
+        {
+          "id": "item-new-882",
+          "label": "Parking brake",
+          "detail": "SET"
+        },
+        {
+          "id": "item-new-883",
+          "label": "Apu bleed",
+          "detail": "ON"
+        },
+        {
+          "id": "item-new-884",
+          "label": "Eng masters",
+          "detail": "OFF"
+        },
+        {
+          "id": "item-new-885",
+          "label": "Seat belts",
+          "detail": "OFF"
+        },
+        {
+          "id": "item-new-886",
+          "label": "Fuel pumps",
+          "detail": "OFF"
+        },
+        {
+          "id": "item-new-887",
+          "label": "Beacon",
+          "detail": "OFF"
+        },
+        {
+          "id": "item-new-888",
+          "label": "Exterior lights",
+          "detail": "AS REQUIRED"
+        },
+        {
+          "id": "item-new-889",
+          "label": "Transponder",
+          "detail": "STBY"
+        }
+      ]
+    }
+  ]
+}

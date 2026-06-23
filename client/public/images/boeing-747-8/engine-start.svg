@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3f2a1f"/>
+      <stop offset="1" stop-color="#0b1220"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#g)"/>
+  <g fill="none" stroke="#fb923c" stroke-opacity="0.25" stroke-width="2">
+    <circle cx="400" cy="225" r="120"/>
+    <line x1="280" y1="225" x2="520" y2="225"/>
+    <line x1="400" y1="105" x2="400" y2="345"/>
+  </g>
+  <text x="400" y="210" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif"
+        font-size="34" font-weight="700" fill="#e2e8f0">Boeing 747-8 Intercontinental</text>
+  <text x="400" y="250" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif"
+        font-size="22" fill="#fb923c">Engine Start</text>
+  <text x="400" y="410" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif"
+        font-size="14" fill="#64748b">Placeholder — replace with an MSFS 2024 screenshot</text>
+</svg>

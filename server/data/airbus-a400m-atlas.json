@@ -1,0 +1,849 @@
+{
+  "id": "airbus-a400m-atlas",
+  "make": "Airbus",
+  "model": "A400M Atlas",
+  "thumbnail": "/images/airbus-a400m-atlas/thumb.png",
+  "isTemplate": false,
+  "pdf": "/pdfs/airbus-a400m-atlas.pdf",
+  "specs": {
+    "weight": [
+      {
+        "label": "Maximum Takeoff Weight",
+        "value": "310,850 lb (141,000 kg)"
+      },
+      {
+        "label": "Maximum Landing Weight",
+        "value": "271,200 lb (123,000 kg)"
+      },
+      {
+        "label": "Maximum Payload",
+        "value": "81,600 lb (37,000 kg)"
+      },
+      {
+        "label": "Internal Fuel",
+        "value": "112,000 lb (50,800 kg)"
+      }
+    ],
+    "dimensions": [
+      {
+        "label": "Wingspan",
+        "value": "139 ft (42.4 m)"
+      },
+      {
+        "label": "Length",
+        "value": "148 ft (45.1 m)"
+      },
+      {
+        "label": "Height",
+        "value": "48 ft (14.7 m)"
+      },
+      {
+        "label": "Cargo Hold Volume",
+        "value": "12,000 ft3 (340 m3)"
+      },
+      {
+        "label": "Cargo Cross Section",
+        "value": "13.1 x 13.1 ft (4 x 4 m)"
+      }
+    ],
+    "performance": [
+      {
+        "label": "Max Operating Altitude",
+        "value": "40,000 ft"
+      },
+      {
+        "label": "Max Cruise Speed",
+        "value": "433 KTAS"
+      },
+      {
+        "label": "Max Operating Speed",
+        "value": "300 KCAS / M 0.72"
+      },
+      {
+        "label": "Cruise Range",
+        "value": "M 0.68 - 0.72"
+      },
+      {
+        "label": "Range Max Payload",
+        "value": "1,780 nm"
+      },
+      {
+        "label": "Range 20 t Payload",
+        "value": "3,400 nm"
+      },
+      {
+        "label": "Ferry Range",
+        "value": "4,800 nm"
+      }
+    ],
+    "speeds": []
+  },
+  "sections": [
+    {
+      "id": "section-new-146",
+      "title": "Preflight",
+      "image": "/images/airbus-a400m-atlas/pre-start.png",
+      "items": [
+        {
+          "id": "item-new-147",
+          "label": "Preflight inspection",
+          "detail": "COMPLETED"
+        },
+        {
+          "id": "item-new-148",
+          "label": "Parking brake",
+          "detail": "SET"
+        },
+        {
+          "id": "item-new-149",
+          "label": "Chocks / tie-downs",
+          "detail": "REMOVE"
+        },
+        {
+          "id": "item-new-150",
+          "label": "Cargo / doors",
+          "detail": "CLOSED"
+        },
+        {
+          "id": "item-new-151",
+          "label": "Gear pins / covers",
+          "detail": "REMOVED"
+        },
+        {
+          "id": "item-new-152",
+          "label": "Flight controls",
+          "detail": "CHECK"
+        }
+      ]
+    },
+    {
+      "id": "section-new-153",
+      "title": "Electrical power up",
+      "image": "/images/airbus-a400m-atlas/thumb.png",
+      "items": [
+        {
+          "id": "item-new-154",
+          "label": "Bat 1 / bat 2 / ess bat",
+          "detail": "ON"
+        },
+        {
+          "id": "item-new-155",
+          "label": "External power",
+          "detail": "AS REQUIRED"
+        },
+        {
+          "id": "item-new-156",
+          "label": "Apu",
+          "detail": "START"
+        },
+        {
+          "id": "item-new-157",
+          "label": "Apu bleed",
+          "detail": "ON"
+        },
+        {
+          "id": "item-new-158",
+          "label": "Gadirs",
+          "detail": "ON"
+        },
+        {
+          "id": "item-new-159",
+          "label": "Lights",
+          "detail": "SET"
+        },
+        {
+          "id": "item-new-160",
+          "label": "Emergency exit lights",
+          "detail": "ARM"
+        },
+        {
+          "id": "item-new-161",
+          "label": "Seatbelt signs",
+          "detail": "ON"
+        },
+        {
+          "id": "item-new-162",
+          "label": "Fuel pumps",
+          "detail": "ON"
+        }
+      ]
+    },
+    {
+      "id": "section-new-163",
+      "title": "Before start",
+      "image": "/images/airbus-a400m-atlas/pre-start.png",
+      "items": [
+        {
+          "id": "item-new-164",
+          "label": "Efis",
+          "detail": "SET"
+        },
+        {
+          "id": "item-new-165",
+          "label": "Fmges",
+          "detail": "SET"
+        },
+        {
+          "id": "item-new-166",
+          "label": "Cockpit preparation",
+          "detail": "COMPLETE"
+        },
+        {
+          "id": "item-new-167",
+          "label": "Fuel quantity",
+          "detail": "CHECK"
+        },
+        {
+          "id": "item-new-168",
+          "label": "Takeoff data",
+          "detail": "SET"
+        },
+        {
+          "id": "item-new-169",
+          "label": "Altimeters",
+          "detail": "SET"
+        },
+        {
+          "id": "item-new-170",
+          "label": "Beacon",
+          "detail": "ON"
+        },
+        {
+          "id": "item-new-171",
+          "label": "Parking brake",
+          "detail": "ON"
+        }
+      ]
+    },
+    {
+      "id": "section-new-172",
+      "title": "Engine start",
+      "image": "/images/airbus-a400m-atlas/startup.png",
+      "items": [
+        {
+          "id": "item-new-173",
+          "label": "Engine start selector",
+          "detail": "IGN START"
+        },
+        {
+          "id": "item-new-174",
+          "label": "Eng master 1",
+          "detail": "FEATHER When AVAIL displayed on E/WD"
+        },
+        {
+          "id": "item-new-175",
+          "label": "Eng master 1",
+          "detail": "RUN"
+        },
+        {
+          "id": "item-new-176",
+          "label": "Engines 2, 3, 4",
+          "detail": "START"
+        },
+        {
+          "id": "item-new-177",
+          "label": "Engine parameters",
+          "detail": "MONITOR"
+        },
+        {
+          "id": "item-new-178",
+          "label": "Hyd / elec / fuel",
+          "detail": "CHECK"
+        }
+      ]
+    },
+    {
+      "id": "section-new-179",
+      "title": "After start / before taxi",
+      "image": "/images/airbus-a400m-atlas/before-taxi.png",
+      "items": [
+        {
+          "id": "item-new-180",
+          "label": "Engine start selector",
+          "detail": "NORM"
+        },
+        {
+          "id": "item-new-181",
+          "label": "Apu bleed",
+          "detail": "OFF"
+        },
+        {
+          "id": "item-new-182",
+          "label": "Apu",
+          "detail": "OFF"
+        },
+        {
+          "id": "item-new-183",
+          "label": "Anti ice",
+          "detail": "AS REQUIRED"
+        },
+        {
+          "id": "item-new-184",
+          "label": "Auto brakes",
+          "detail": "HI / RTO"
+        },
+        {
+          "id": "item-new-185",
+          "label": "Ground spoilers",
+          "detail": "ARM"
+        },
+        {
+          "id": "item-new-186",
+          "label": "Yaw trim",
+          "detail": "RESET"
+        },
+        {
+          "id": "item-new-187",
+          "label": "Flaps",
+          "detail": "SET"
+        },
+        {
+          "id": "item-new-188",
+          "label": "T.o & taxi lights",
+          "detail": "ON"
+        },
+        {
+          "id": "item-new-189",
+          "label": "Runway turnoff lights",
+          "detail": "ON"
+        }
+      ]
+    },
+    {
+      "id": "section-new-190",
+      "title": "Before takeoff",
+      "image": "/images/airbus-a400m-atlas/before-take-off.png",
+      "items": [
+        {
+          "id": "item-new-191",
+          "label": "Takeoff briefing",
+          "detail": "COMPLETE"
+        },
+        {
+          "id": "item-new-192",
+          "label": "Flight controls",
+          "detail": "CHECKED"
+        },
+        {
+          "id": "item-new-193",
+          "label": "Flaps",
+          "detail": "VERIFY SET"
+        },
+        {
+          "id": "item-new-194",
+          "label": "Auto brakes",
+          "detail": "HI / RTO"
+        },
+        {
+          "id": "item-new-195",
+          "label": "Spoilers",
+          "detail": "ARMED"
+        },
+        {
+          "id": "item-new-196",
+          "label": "Strobe lights",
+          "detail": "ON"
+        },
+        {
+          "id": "item-new-197",
+          "label": "Landing lights",
+          "detail": "ON"
+        },
+        {
+          "id": "item-new-198",
+          "label": "Pack 1 / pack 2",
+          "detail": "AS REQUIRED"
+        },
+        {
+          "id": "item-new-199",
+          "label": "Pfd / nd / fma",
+          "detail": "CHECK"
+        },
+        {
+          "id": "item-new-200",
+          "label": "Cas / ecam",
+          "detail": "CHECK"
+        }
+      ]
+    },
+    {
+      "id": "section-new-201",
+      "title": "Takeoff data check",
+      "image": "/images/airbus-a400m-atlas/take-off.png",
+      "items": [
+        {
+          "id": "item-new-202",
+          "label": "V1 / vr / v2",
+          "detail": "SET"
+        },
+        {
+          "id": "item-new-203",
+          "label": "Trans alt / sid",
+          "detail": "CHECK"
+        },
+        {
+          "id": "item-new-204",
+          "label": "Thrust rating",
+          "detail": "SET"
+        },
+        {
+          "id": "item-new-205",
+          "label": "Trim",
+          "detail": "SET"
+        },
+        {
+          "id": "item-new-206",
+          "label": "Runway",
+          "detail": "CONFIRM"
+        }
+      ]
+    },
+    {
+      "id": "section-new-207",
+      "title": "Normal takeoff",
+      "image": "/images/airbus-a400m-atlas/take-off.png",
+      "items": [
+        {
+          "id": "item-new-208",
+          "label": "Brakes",
+          "detail": "HOLD"
+        },
+        {
+          "id": "item-new-209",
+          "label": "Thrust levers",
+          "detail": "TOGA / FLX"
+        },
+        {
+          "id": "item-new-210",
+          "label": "Engine instruments",
+          "detail": "CHECK"
+        },
+        {
+          "id": "item-new-211",
+          "label": "Brakes",
+          "detail": "RELEASE"
+        },
+        {
+          "id": "item-new-212",
+          "label": "V1",
+          "detail": "MONITOR"
+        },
+        {
+          "id": "item-new-213",
+          "label": "Vr",
+          "detail": "ROTATE"
+        },
+        {
+          "id": "item-new-214",
+          "label": "Pitch attitude",
+          "detail": "10 deg Positive rate"
+        },
+        {
+          "id": "item-new-215",
+          "label": "Landing gear",
+          "detail": "UP At acceleration altitude"
+        },
+        {
+          "id": "item-new-216",
+          "label": "Flaps",
+          "detail": "RETRACT ON SCHEDULE"
+        }
+      ]
+    },
+    {
+      "id": "section-new-217",
+      "title": "Climb",
+      "image": "/images/airbus-a400m-atlas/climb-out.png",
+      "items": [
+        {
+          "id": "item-new-218",
+          "label": "Thrust levers",
+          "detail": "CLB"
+        },
+        {
+          "id": "item-new-219",
+          "label": "Autopilot",
+          "detail": "AS REQUIRED"
+        },
+        {
+          "id": "item-new-220",
+          "label": "Engine parameters",
+          "detail": "MONITOR"
+        },
+        {
+          "id": "item-new-221",
+          "label": "Pressurization",
+          "detail": "MONITOR"
+        },
+        {
+          "id": "item-new-222",
+          "label": "Anti ice",
+          "detail": "AS REQUIRED"
+        },
+        {
+          "id": "item-new-223",
+          "label": "Altimeter above transition",
+          "detail": "STD"
+        }
+      ]
+    },
+    {
+      "id": "section-new-224",
+      "title": "Cruise",
+      "image": "/images/airbus-a400m-atlas/cruise.png",
+      "items": [
+        {
+          "id": "item-new-225",
+          "label": "Ecam / eis",
+          "detail": "MONITOR"
+        },
+        {
+          "id": "item-new-226",
+          "label": "Fuel",
+          "detail": "MONITOR"
+        },
+        {
+          "id": "item-new-227",
+          "label": "Fmges",
+          "detail": "CHECK"
+        },
+        {
+          "id": "item-new-228",
+          "label": "Anti ice",
+          "detail": "AS REQUIRED"
+        }
+      ]
+    },
+    {
+      "id": "section-new-229",
+      "title": "Descent",
+      "image": "/images/airbus-a400m-atlas/descent.png",
+      "items": [
+        {
+          "id": "item-new-230",
+          "label": "Descent briefing",
+          "detail": "COMPLETE"
+        },
+        {
+          "id": "item-new-231",
+          "label": "Landing field elevation",
+          "detail": "CHECK"
+        },
+        {
+          "id": "item-new-232",
+          "label": "Qnh destination",
+          "detail": "CHECK"
+        },
+        {
+          "id": "item-new-233",
+          "label": "Minimums",
+          "detail": "SET"
+        },
+        {
+          "id": "item-new-234",
+          "label": "Approach data / perf appr",
+          "detail": "SET Below transition level"
+        },
+        {
+          "id": "item-new-235",
+          "label": "Altimeter",
+          "detail": "SET LOCAL Below 10,000 ft"
+        },
+        {
+          "id": "item-new-236",
+          "label": "Landing lights",
+          "detail": "ON"
+        }
+      ]
+    },
+    {
+      "id": "section-new-237",
+      "title": "Approach / landing config",
+      "image": "/images/airbus-a400m-atlas/landing.png",
+      "items": [
+        {
+          "id": "item-new-238",
+          "label": "Approach briefing",
+          "detail": "COMPLETE"
+        },
+        {
+          "id": "item-new-239",
+          "label": "Altimeters",
+          "detail": "SET"
+        },
+        {
+          "id": "item-new-240",
+          "label": "Engine start selector",
+          "detail": "AS REQUIRED"
+        },
+        {
+          "id": "item-new-241",
+          "label": "Airspeed",
+          "detail": "MANAGED / VAPP"
+        },
+        {
+          "id": "item-new-242",
+          "label": "Flaps",
+          "detail": "ON SCHEDULE"
+        },
+        {
+          "id": "item-new-243",
+          "label": "Landing gear",
+          "detail": "DOWN"
+        },
+        {
+          "id": "item-new-244",
+          "label": "Ground spoilers",
+          "detail": "ARM"
+        },
+        {
+          "id": "item-new-245",
+          "label": "Auto brake",
+          "detail": "SET"
+        }
+      ]
+    },
+    {
+      "id": "section-new-246",
+      "title": "Before landing",
+      "image": "/images/airbus-a400m-atlas/landing.png",
+      "items": [
+        {
+          "id": "item-new-247",
+          "label": "Landing gear",
+          "detail": "DOWN"
+        },
+        {
+          "id": "item-new-248",
+          "label": "Flaps",
+          "detail": "LANDING CONF"
+        },
+        {
+          "id": "item-new-249",
+          "label": "Spoilers",
+          "detail": "ARMED"
+        },
+        {
+          "id": "item-new-250",
+          "label": "Auto brake",
+          "detail": "SET"
+        },
+        {
+          "id": "item-new-251",
+          "label": "Cabin / pressurization",
+          "detail": "CHECK"
+        },
+        {
+          "id": "item-new-252",
+          "label": "Autopilot",
+          "detail": "AS REQUIRED"
+        },
+        {
+          "id": "item-new-253",
+          "label": "Landing lights",
+          "detail": "VERIFY ON"
+        },
+        {
+          "id": "item-new-254",
+          "label": "Vapp / vls",
+          "detail": "CHECK"
+        }
+      ]
+    },
+    {
+      "id": "section-new-255",
+      "title": "Landing",
+      "image": "/images/airbus-a400m-atlas/landing.png",
+      "items": [
+        {
+          "id": "item-new-256",
+          "label": "Flaps",
+          "detail": "LANDING CONF"
+        },
+        {
+          "id": "item-new-257",
+          "label": "Airspeed",
+          "detail": "VAPP"
+        },
+        {
+          "id": "item-new-258",
+          "label": "Landing gear",
+          "detail": "DOWN"
+        },
+        {
+          "id": "item-new-259",
+          "label": "Reversers",
+          "detail": "AS REQUIRED"
+        },
+        {
+          "id": "item-new-260",
+          "label": "Brakes",
+          "detail": "AS REQUIRED"
+        }
+      ]
+    },
+    {
+      "id": "section-new-261",
+      "title": "Go around",
+      "image": "/images/airbus-a400m-atlas/thumb.png",
+      "items": [
+        {
+          "id": "item-new-262",
+          "label": "Thrust levers",
+          "detail": "TOGA"
+        },
+        {
+          "id": "item-new-263",
+          "label": "Pitch",
+          "detail": "GO-AROUND ATTITUDE"
+        },
+        {
+          "id": "item-new-264",
+          "label": "Flaps",
+          "detail": "ONE STEP RETRACT Positive rate"
+        },
+        {
+          "id": "item-new-265",
+          "label": "Landing gear",
+          "detail": "UP"
+        },
+        {
+          "id": "item-new-266",
+          "label": "Nav / hdg",
+          "detail": "AS REQUIRED"
+        },
+        {
+          "id": "item-new-267",
+          "label": "Acceleration altitude",
+          "detail": "OBSERVE"
+        },
+        {
+          "id": "item-new-268",
+          "label": "Flaps",
+          "detail": "RETRACT ON SCHEDULE"
+        }
+      ]
+    },
+    {
+      "id": "section-new-269",
+      "title": "After landing",
+      "image": "/images/airbus-a400m-atlas/taxi-to-ramp.png",
+      "items": [
+        {
+          "id": "item-new-270",
+          "label": "Strobe / landing lights",
+          "detail": "OFF"
+        },
+        {
+          "id": "item-new-271",
+          "label": "Ground spoilers",
+          "detail": "DISARM"
+        },
+        {
+          "id": "item-new-272",
+          "label": "Flaps",
+          "detail": "RETRACT"
+        },
+        {
+          "id": "item-new-273",
+          "label": "Apu",
+          "detail": "START"
+        },
+        {
+          "id": "item-new-274",
+          "label": "Anti ice",
+          "detail": "OFF"
+        },
+        {
+          "id": "item-new-275",
+          "label": "T.o & taxi lights",
+          "detail": "AS REQUIRED"
+        }
+      ]
+    },
+    {
+      "id": "section-new-276",
+      "title": "Parking",
+      "image": "/images/airbus-a400m-atlas/shutdown.png",
+      "items": [
+        {
+          "id": "item-new-277",
+          "label": "Parking brake",
+          "detail": "SET"
+        },
+        {
+          "id": "item-new-278",
+          "label": "Apu bleed",
+          "detail": "ON"
+        },
+        {
+          "id": "item-new-279",
+          "label": "Engines",
+          "detail": "OFF"
+        },
+        {
+          "id": "item-new-280",
+          "label": "Seat belts",
+          "detail": "OFF"
+        },
+        {
+          "id": "item-new-281",
+          "label": "Fuel pumps",
+          "detail": "OFF"
+        },
+        {
+          "id": "item-new-282",
+          "label": "Beacon",
+          "detail": "OFF"
+        },
+        {
+          "id": "item-new-283",
+          "label": "External power",
+          "detail": "AS REQUIRED"
+        }
+      ]
+    },
+    {
+      "id": "section-new-284",
+      "title": "Securing",
+      "image": "/images/airbus-a400m-atlas/thumb.png",
+      "items": [
+        {
+          "id": "item-new-285",
+          "label": "Emergency exit lights",
+          "detail": "OFF"
+        },
+        {
+          "id": "item-new-286",
+          "label": "Exterior lights",
+          "detail": "SET"
+        },
+        {
+          "id": "item-new-287",
+          "label": "Gadirs",
+          "detail": "OFF"
+        },
+        {
+          "id": "item-new-288",
+          "label": "Apu bleed",
+          "detail": "OFF"
+        },
+        {
+          "id": "item-new-289",
+          "label": "Apu",
+          "detail": "OFF"
+        },
+        {
+          "id": "item-new-290",
+          "label": "External power",
+          "detail": "OFF"
+        },
+        {
+          "id": "item-new-291",
+          "label": "Bat 1 / bat 2 / ess bat",
+          "detail": "OFF"
+        }
+      ]
+    }
+  ]
+}

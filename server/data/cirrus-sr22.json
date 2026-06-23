@@ -1,0 +1,171 @@
+{
+  "id": "cirrus-sr22",
+  "make": "Cirrus",
+  "model": "SR22",
+  "thumbnail": "/images/cirrus-sr22/cirrus-sr22t.png",
+  "isTemplate": false,
+  "sections": [
+    {
+      "id": "before-start",
+      "title": "Before Start",
+      "image": "/images/cirrus-sr22/before-start.svg",
+      "items": [
+        {
+          "id": "b1",
+          "label": "Seats & belts",
+          "detail": "ADJUST & SECURE"
+        },
+        {
+          "id": "b2",
+          "label": "Brakes",
+          "detail": "TEST & SET"
+        },
+        {
+          "id": "b3",
+          "label": "Bat 1 & Bat 2",
+          "detail": "ON"
+        },
+        {
+          "id": "b4",
+          "label": "Fuel selector",
+          "detail": "FULLEST TANK"
+        }
+      ]
+    },
+    {
+      "id": "engine-start",
+      "title": "Engine Start",
+      "image": "/images/cirrus-sr22/engine-start.svg",
+      "items": [
+        {
+          "id": "e1",
+          "label": "Mixture",
+          "detail": "FULL RICH"
+        },
+        {
+          "id": "e2",
+          "label": "Boost pump",
+          "detail": "PRIME / ON"
+        },
+        {
+          "id": "e3",
+          "label": "Ignition",
+          "detail": "START"
+        },
+        {
+          "id": "e4",
+          "label": "Oil pressure",
+          "detail": "CHECK"
+        },
+        {
+          "id": "e5",
+          "label": "Alternators",
+          "detail": "ON / CHECK"
+        }
+      ]
+    },
+    {
+      "id": "before-takeoff",
+      "title": "Before Takeoff",
+      "image": "/images/cirrus-sr22/before-takeoff.svg",
+      "items": [
+        {
+          "id": "t1",
+          "label": "Flight controls",
+          "detail": "FREE & CORRECT"
+        },
+        {
+          "id": "t2",
+          "label": "Flaps",
+          "detail": "50%"
+        },
+        {
+          "id": "t3",
+          "label": "Trim",
+          "detail": "SET TAKEOFF"
+        },
+        {
+          "id": "t4",
+          "label": "CAPS handle",
+          "detail": "ARMED / PIN REMOVED"
+        },
+        {
+          "id": "t5",
+          "label": "Transponder",
+          "detail": "ALT"
+        }
+      ]
+    },
+    {
+      "id": "cruise",
+      "title": "Cruise",
+      "image": "/images/cirrus-sr22/cruise.svg",
+      "items": [
+        {
+          "id": "c1",
+          "label": "Power",
+          "detail": "SET 65–85%"
+        },
+        {
+          "id": "c2",
+          "label": "Mixture",
+          "detail": "LEAN PER POH"
+        },
+        {
+          "id": "c3",
+          "label": "Fuel balance",
+          "detail": "MONITOR"
+        }
+      ]
+    },
+    {
+      "id": "landing",
+      "title": "Landing",
+      "image": "/images/cirrus-sr22/landing.svg",
+      "items": [
+        {
+          "id": "l1",
+          "label": "Fuel pump",
+          "detail": "BOOST"
+        },
+        {
+          "id": "l2",
+          "label": "Mixture",
+          "detail": "FULL RICH"
+        },
+        {
+          "id": "l3",
+          "label": "Flaps",
+          "detail": "100%"
+        },
+        {
+          "id": "l4",
+          "label": "Approach speed",
+          "detail": "80–85 KIAS"
+        }
+      ]
+    },
+    {
+      "id": "shutdown",
+      "title": "Shutdown",
+      "image": "/images/cirrus-sr22/shutdown.svg",
+      "items": [
+        {
+          "id": "s1",
+          "label": "Avionics",
+          "detail": "OFF"
+        },
+        {
+          "id": "s2",
+          "label": "Mixture",
+          "detail": "CUTOFF"
+        },
+        {
+          "id": "s3",
+          "label": "Bat / Alt",
+          "detail": "OFF"
+        }
+      ]
+    }
+  ]
+}

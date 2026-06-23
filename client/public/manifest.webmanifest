@@ -1,0 +1,18 @@
+{
+  "name": "MSFS 2024 Checklists",
+  "short_name": "Checklists",
+  "description": "Pilot checklists for Microsoft Flight Simulator 2024 aircraft",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0b1220",
+  "theme_color": "#0b1220",
+  "icons": [
+    {
+      "src": "/images/app-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

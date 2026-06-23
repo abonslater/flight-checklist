@@ -1,0 +1,233 @@
+{
+  "id": "cessna-172-skyhawk",
+  "make": "Cessna",
+  "model": "172 Skyhawk",
+  "thumbnail": "/images/cessna-172-skyhawk/thumb.png",
+  "isTemplate": true,
+  "sections": [
+    {
+      "id": "preflight",
+      "title": "Preflight",
+      "image": "/images/cessna-172-skyhawk/preflight.svg",
+      "items": [
+        {
+          "id": "p1",
+          "label": "Documents (ARROW)",
+          "detail": "ON BOARD"
+        },
+        {
+          "id": "p2",
+          "label": "Control lock",
+          "detail": "REMOVE"
+        },
+        {
+          "id": "p3",
+          "label": "Master switch",
+          "detail": "ON"
+        },
+        {
+          "id": "p4",
+          "label": "Fuel quantity",
+          "detail": "CHECK"
+        },
+        {
+          "id": "p5",
+          "label": "Master switch",
+          "detail": "OFF"
+        },
+        {
+          "id": "p6",
+          "label": "Fuel sumps",
+          "detail": "DRAIN & CHECK"
+        }
+      ]
+    },
+    {
+      "id": "before-start",
+      "title": "Before Start",
+      "image": "/images/cessna-172-skyhawk/before-start.svg",
+      "items": [
+        {
+          "id": "b1",
+          "label": "Seats & belts",
+          "detail": "ADJUST & SECURE"
+        },
+        {
+          "id": "b2",
+          "label": "Brakes",
+          "detail": "TEST & SET"
+        },
+        {
+          "id": "b3",
+          "label": "Circuit breakers",
+          "detail": "IN"
+        },
+        {
+          "id": "b4",
+          "label": "Avionics",
+          "detail": "OFF"
+        },
+        {
+          "id": "b5",
+          "label": "Fuel selector",
+          "detail": "BOTH"
+        }
+      ]
+    },
+    {
+      "id": "engine-start",
+      "title": "Engine Start",
+      "image": "/images/cessna-172-skyhawk/engine-start.svg",
+      "items": [
+        {
+          "id": "e1",
+          "label": "Mixture",
+          "detail": "RICH"
+        },
+        {
+          "id": "e2",
+          "label": "Throttle",
+          "detail": "OPEN 1/4 IN"
+        },
+        {
+          "id": "e3",
+          "label": "Master switch",
+          "detail": "ON"
+        },
+        {
+          "id": "e4",
+          "label": "Beacon",
+          "detail": "ON"
+        },
+        {
+          "id": "e5",
+          "label": "Ignition",
+          "detail": "START"
+        },
+        {
+          "id": "e6",
+          "label": "Oil pressure",
+          "detail": "CHECK GREEN"
+        }
+      ]
+    },
+    {
+      "id": "before-takeoff",
+      "title": "Before Takeoff",
+      "image": "/images/cessna-172-skyhawk/before-takeoff.svg",
+      "items": [
+        {
+          "id": "t1",
+          "label": "Flight controls",
+          "detail": "FREE & CORRECT"
+        },
+        {
+          "id": "t2",
+          "label": "Flight instruments",
+          "detail": "CHECK & SET"
+        },
+        {
+          "id": "t3",
+          "label": "Run-up @ 1800 RPM",
+          "detail": "MAGS / CARB HEAT"
+        },
+        {
+          "id": "t4",
+          "label": "Flaps",
+          "detail": "SET FOR T/O"
+        },
+        {
+          "id": "t5",
+          "label": "Trim",
+          "detail": "SET TAKEOFF"
+        }
+      ]
+    },
+    {
+      "id": "cruise",
+      "title": "Cruise",
+      "image": "/images/cessna-172-skyhawk/cruise.svg",
+      "items": [
+        {
+          "id": "c1",
+          "label": "Power",
+          "detail": "SET ~2300 RPM"
+        },
+        {
+          "id": "c2",
+          "label": "Mixture",
+          "detail": "LEAN"
+        },
+        {
+          "id": "c3",
+          "label": "Engine instruments",
+          "detail": "MONITOR"
+        }
+      ]
+    },
+    {
+      "id": "landing",
+      "title": "Landing",
+      "image": "/images/cessna-172-skyhawk/landing.svg",
+      "items": [
+        {
+          "id": "l1",
+          "label": "Seats & belts",
+          "detail": "SECURE"
+        },
+        {
+          "id": "l2",
+          "label": "Mixture",
+          "detail": "RICH"
+        },
+        {
+          "id": "l3",
+          "label": "Carb heat",
+          "detail": "ON"
+        },
+        {
+          "id": "l4",
+          "label": "Flaps",
+          "detail": "AS REQUIRED"
+        },
+        {
+          "id": "l5",
+          "label": "Approach speed",
+          "detail": "65 KIAS"
+        }
+      ]
+    },
+    {
+      "id": "shutdown",
+      "title": "Shutdown",
+      "image": "/images/cessna-172-skyhawk/shutdown.svg",
+      "items": [
+        {
+          "id": "s1",
+          "label": "Throttle",
+          "detail": "IDLE"
+        },
+        {
+          "id": "s2",
+          "label": "Avionics",
+          "detail": "OFF"
+        },
+        {
+          "id": "s3",
+          "label": "Mixture",
+          "detail": "CUTOFF"
+        },
+        {
+          "id": "s4",
+          "label": "Ignition",
+          "detail": "OFF"
+        },
+        {
+          "id": "s5",
+          "label": "Master switch",
+          "detail": "OFF"
+        }
+      ]
+    }
+  ]
+}
