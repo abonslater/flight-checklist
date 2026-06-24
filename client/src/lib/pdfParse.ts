@@ -124,6 +124,38 @@ function splitTokens(tokens: PdfToken[]): { label: string; detail: string } | nu
 
 const splitLabelValue = (row: Row) => splitTokens(row.tokens);
 
+type SpecEntry = { label: string; value: string };
+
+/** Read tokens row-by-row as single-column "label … value" pairs. */
+function specEntriesFromTokens(tokens: PdfToken[]): SpecEntry[] {
+  const out: SpecEntry[] = [];
+  for (const row of buildRows(tokens)) {
+    const lv = splitTokens(row.tokens);
+    if (lv) out.push({ label: lv.label, value: lv.detail });
+  }
+  return out;
+}
+
+/**
+ * Resolve the Speeds table, which may be laid out as one or two columns. We read it both ways
+ * — as a single column, and split at the x-midpoint into two columns — and keep whichever
+ * yields more valid label/value pairs. (A within-column label→value gap can be wider than the
+ * gap between columns, so splitting on the widest gap is unreliable; a geometric midpoint
+ * separates two columns correctly while a single-column read wins when there's only one.)
+ */
+function resolveSpeeds(tokens: PdfToken[]): SpecEntry[] {
+  if (!tokens.length) return [];
+  const single = specEntriesFromTokens(tokens);
+  const minX = Math.min(...tokens.map((t) => t.x));
+  const maxX = Math.max(...tokens.map((t) => t.x + t.w));
+  const mid = (minX + maxX) / 2;
+  const twoCol = [
+    ...specEntriesFromTokens(tokens.filter((t) => t.x < mid)),
+    ...specEntriesFromTokens(tokens.filter((t) => t.x >= mid)),
+  ];
+  return twoCol.length > single.length ? twoCol : single;
+}
+
 /** Heuristic: a single, horizontally-centered, ALL-CAPS group of text (a colored banner). */
 function isSectionHeader(row: Row, colLeft: number, colWidth: number): boolean {
   if (colWidth <= 0 || row.text.length > 40) return false;
@@ -148,7 +180,7 @@ export function buildChecklist(pages: PdfPage[]): ParsedChecklist {
   let model = "";
   const sections: ChecklistSection[] = [];
   const specs = emptySpecs();
-  // Speeds is a two-column table; collect its tokens and split into sub-columns afterwards.
+  // Speeds may be one or two columns; collect its tokens and resolve the layout afterwards.
   const speedsTokens: PdfToken[] = [];
   let currentSpecKey: keyof AircraftSpecs | null = null;
   let started = false;
@@ -210,8 +242,10 @@ export function buildChecklist(pages: PdfPage[]): ParsedChecklist {
             continue;
           }
           if (!currentSpecKey || CHROME_RE.test(text)) continue;
+          // Speeds tokens are collected and resolved after the loop (one- or two-column).
+          // Other groups are single-column, read row-by-row here.
           if (currentSpecKey === "speeds") {
-            speedsTokens.push(...row.tokens); // resolved into sub-columns after all pages
+            speedsTokens.push(...row.tokens);
           } else {
             const lv = splitTokens(row.tokens);
             if (lv) specs[currentSpecKey].push({ label: lv.label, value: lv.detail });
@@ -237,22 +271,7 @@ export function buildChecklist(pages: PdfPage[]): ParsedChecklist {
     }
   });
 
-  // Resolve the Speeds two-column table: split its tokens at their x-midpoint into a left
-  // and right sub-column, then read each sub-column's rows as label/value pairs.
-  if (speedsTokens.length) {
-    const minX = Math.min(...speedsTokens.map((t) => t.x));
-    const maxX = Math.max(...speedsTokens.map((t) => t.x + t.w));
-    const subMid = (minX + maxX) / 2;
-    for (const half of [
-      speedsTokens.filter((t) => t.x < subMid),
-      speedsTokens.filter((t) => t.x >= subMid),
-    ]) {
-      for (const row of buildRows(half)) {
-        const lv = splitTokens(row.tokens);
-        if (lv) specs.speeds.push({ label: lv.label, value: lv.detail });
-      }
-    }
-  }
+  specs.speeds = resolveSpeeds(speedsTokens);
 
   // Drop empty sections that may result from stray headers.
   return { make, model, specs, sections: sections.filter((s) => s.items.length > 0) };
