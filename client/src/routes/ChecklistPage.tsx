@@ -181,8 +181,10 @@ export default function ChecklistPage() {
         </main>
 
         {/* Right pane: aircraft specifications (collapsible). Full-width below on
-            phone/tablet, right column at lg. */}
-        <div className="md:col-span-2 lg:col-span-1">
+            phone/tablet; at lg it's the right column and stays pinned while the
+            checklist scrolls (self-start keeps the grid cell from stretching so
+            sticky engages; it scrolls internally if the specs are long). */}
+        <div className="md:col-span-2 lg:col-span-1 lg:sticky lg:top-4 lg:self-start lg:max-h-[calc(100vh-2rem)] lg:overflow-y-auto">
           <SpecsPanel
             specs={aircraft.specs ?? emptySpecs()}
             editHref={`/aircraft/${id}/edit`}
