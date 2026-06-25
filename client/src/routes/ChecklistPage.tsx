@@ -20,14 +20,12 @@ export default function ChecklistPage() {
   const { id = "" } = useParams();
   const [aircraft, setAircraft] = useState<Aircraft | null>(null);
   const [error, setError] = useState<string | null>(null);
-  const [selectedIds, setSelectedIds] = useState<Set<string>>(new Set());
   const [checks, setChecks] = useState<CheckMap>({});
 
   useEffect(() => {
     getAircraft(id)
       .then((a) => {
         setAircraft(a);
-        setSelectedIds(new Set(a.sections[0] ? [a.sections[0].id] : []));
         setChecks(loadChecks(id));
       })
       .catch((e) => setError(String(e)));
@@ -38,25 +36,11 @@ export default function ChecklistPage() {
     if (aircraft) saveChecks(id, checks);
   }, [checks, id, aircraft]);
 
-  // Sections currently shown, kept in checklist order regardless of selection order.
-  const selectedSections = useMemo(
-    () => aircraft?.sections.filter((s) => selectedIds.has(s.id)) ?? [],
-    [aircraft, selectedIds]
-  );
-
-  function toggleSection(sectionId: string) {
-    setSelectedIds((prev) => {
-      const next = new Set(prev);
-      if (next.has(sectionId)) next.delete(sectionId);
-      else next.add(sectionId);
-      return next;
-    });
-  }
-  function selectAllSections() {
-    setSelectedIds(new Set(aircraft?.sections.map((s) => s.id) ?? []));
-  }
-  function clearSections() {
-    setSelectedIds(new Set());
+  // Clicking a section in the sidebar scrolls to it in the checklist.
+  function scrollToSection(sectionId: string) {
+    document
+      .getElementById(`section-${sectionId}`)
+      ?.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
   const overall = useMemo(() => {
@@ -148,23 +132,24 @@ export default function ChecklistPage() {
       </header>
 
       <div className="flex flex-1 flex-col gap-4 pt-4 md:grid md:grid-cols-[16rem_1fr] md:gap-6 lg:grid-cols-[16rem_1fr_20rem]">
-        {/* Left pane: sections */}
-        <aside className="md:scroll-y md:max-h-[calc(100vh-12rem)]">
+        {/* Left pane: section navigation — click to jump to a section */}
+        <aside className="md:scroll-y md:sticky md:top-4 md:max-h-[calc(100vh-2rem)] md:self-start">
           <SectionSidebar
             sections={aircraft.sections}
-            selectedIds={selectedIds}
             checks={checks}
-            onToggle={toggleSection}
-            onSelectAll={selectAllSections}
-            onClear={clearSections}
+            onSelect={scrollToSection}
           />
         </aside>
 
-        {/* Main: cockpit image + items for each selected section, stacked */}
+        {/* Main: every section, stacked. Each is a scroll target for the sidebar. */}
         <main className="flex flex-col gap-8">
-          {selectedSections.length > 0 ? (
-            selectedSections.map((section) => (
-              <section key={section.id} className="flex flex-col gap-4">
+          {aircraft.sections.length > 0 ? (
+            aircraft.sections.map((section) => (
+              <section
+                key={section.id}
+                id={`section-${section.id}`}
+                className="flex scroll-mt-4 flex-col gap-4"
+              >
                 <h2 className="text-lg font-semibold">{section.title}</h2>
                 <CockpitImage
                   src={section.image}
@@ -174,9 +159,7 @@ export default function ChecklistPage() {
               </section>
             ))
           ) : (
-            <p className="text-slate-500">
-              Select one or more sections from the left to view them.
-            </p>
+            <p className="text-slate-500">This checklist has no sections yet.</p>
           )}
         </main>
 
